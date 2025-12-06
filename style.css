@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+  .about_line {
+    height: 28.2rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.space3 {
+  letter-spacing: 3%;
+}
+
+.header_title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.header_icon_wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff33;
+  cursor: pointer;
+}
+
+.title {
+  color: #3a3a3a;
+  font-weight: medium;
+  font-size: 3.5rem;
+  letter-spacing: -3%;
+  line-height: 3.75rem;
+}
+
+.about_company_wrap {
+  padding: 2rem;
+  border-radius: 12px 32px 32px 12px;
+  background: #f2f5f7;
+  flex: 1;
+}
+
+.about_icon_wrap {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 99999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c83a36;
+  margin-bottom: 5rem;
+  @media (max-width: 1920px) and (min-width: 1440px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.about_title {
+  font-weight: medium;
+  font-size: 5rem;
+  line-height: 100%;
+  color: #3a3a3a;
+  margin-bottom: 1rem;
+  letter-spacing: -3%;
+  @media (max-width: 1920px) and (min-width: 1440px) {
+    font-size: 3rem;
+  }
+}
+
+.about_info {
+  letter-spacing: -1%;
+  color: #3a3a3a;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.input_form {
+  width: 100%;
+  height: 4.75rem;
+  background-color: white;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.contact_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/icons/formLine.svg");
+  background-size: 100% auto;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.footer_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer_section::before {
+  content: "";
+  position: absolute;
+  top: 0px; /* начинается выше секции */
+  right: -0px;
+  width: 90%; /* шире чем контейнер */
+  height: 100%; /* выше чем контейнер */
+  background-image: url("./assets/icons/footerLine.svg");
+  background-size: 100% auto;
+  background-position: top right; /* привязка к верхнему правому углу */
+  background-repeat: no-repeat;
+
+  z-index: 1;
+}
+
+.footer_icon_wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff29;
+}
