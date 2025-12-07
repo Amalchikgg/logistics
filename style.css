@@ -189,6 +189,12 @@ button {
     width: 185%;
     height: 185%;
   }
+  @media (max-width: 768px) {
+    background-position: 0% 20%;
+    width: 185%;
+    height: 185%;
+    display: none;
+  }
 }
 
 .footer_section {
@@ -327,21 +333,35 @@ button {
     border-radius: 12px !important;
   }
   .radius_left {
-    border-radius: 12px;
+    border-radius: 12px !important;
   }
   .radius_right {
-    border-radius: 12px;
+    border-radius: 12px !important;
   }
   .radius_full {
-    border-radius: 12px;
+    border-radius: 12px !important;
   }
   .radius_comment_left {
-    border-radius: 12px;
+    border-radius: 12px !important;
   }
   .radius_comment_right {
-    border-radius: 12px;
+    border-radius: 12px !important;
   }
   button {
     font-size: small;
+  }
+  .footer_section_mobile::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/icons/footerLineMobile.svg");
+    background-size: 100% auto;
+    background-position: top right;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    transform-origin: center center;
   }
 }
