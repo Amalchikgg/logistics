@@ -10,10 +10,14 @@
   </head>
   <body>
     <header
-      class="max-w-[1920px] max-[1440px]:max-w-5xl mx-auto z-100 bg-[#3A3A3A] py-6 px-10 max-[1440px]:py-6 max-[1440px]:px-10 max w-full rounded-b-[25px] border-b border-b-[#FFFFFF33] flex justify-between items-center"
+      class="max-w-[1920px] max-[1440px]:max-w-5xl max-[1024px]:max-w-3xl max-[768px]:ronded-xl max-[768px]:px-4 max-[768px]:py-3.5 max-[768px]:max-w-[360px] mx-auto z-100 bg-[#3A3A3A] py-6 px-10 max-[1440px]:py-6 max-[1440px]:px-10 max w-full rounded-b-[25px] border-b border-b-[#FFFFFF33] flex justify-between items-center"
     >
       <div class="flex gap-6 items-center">
-        <img src="./assets/icons/logo.svg" alt="logo" class="mr-6" />
+        <img
+          src="./assets/icons/logo.svg"
+          alt="logo"
+          class="mr-6 max-[768px]:w-25 max-[768px]:h-7"
+        />
         <div class="flex gap-6 max-[1440px]:hidden">
           <div class="flex items-center gap-1">
             <p class="text-white font-medium text-xl leading-[100%]">
@@ -30,22 +34,24 @@
         </div>
       </div>
       <div class="gap-2 flex">
-        <div class="header_icon_wrap">
+        <div class="header_icon_wrap max-[768px]:hidden!">
           <img src="./assets/icons/phone.svg" alt="phone" />
         </div>
         <button
-          class="bg-[#C83A36] h-12 w-41.5 rounded-xl text-white font-medium"
+          class="bg-[#C83A36] h-12 w-41.5 rounded-xl text-white font-medium max-[768px]:hidden!"
         >
           Заказать звонок
         </button>
-        <div class="header_icon_wrap gap-2.5 w-30!">
+        <div
+          class="header_icon_wrap gap-2.5 w-30! max-[768px]:h-10! max-[768px]:23!"
+        >
           <img src="./assets/icons/menu.svg" alt="menu" />
           <p class="text-white font-medium">Меню</p>
         </div>
       </div>
     </header>
     <div
-      class="relative -mt-8 -z-10 max-w-[1920px] max-[1440px]:max-w-5xl mx-auto"
+      class="relative -mt-8 max-[1440px]:-mt-23 -z-10 max-w-[1920px] max-[1440px]:max-w-5xl mx-auto max-[1024px]:max-w-3xl max-[768px]:max-w-[360px]"
     >
       <img
         src="./assets/images/main.png"
@@ -55,14 +61,14 @@
       <img
         src="./assets/images/mainTablet.png"
         alt="main"
-        class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block"
+        class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
       />
       <div
-        class="flex justify-between absolute w-full top-0 z-10 px-15 pt-15 max-[1440px]:pt-22.5"
+        class="flex justify-between absolute w-full top-0 z-10 px-15 pt-15 max-[1440px]:pt-22.5 max-[768px]:px-5 max-[768px]:pt-30"
       >
         <div>
           <h1
-            class="text-white font-medium text-[4rem] max-[1440px]:text-5xl leading-[100%] mb-4"
+            class="text-white font-medium text-[4rem] max-[1440px]:text-5xl leading-[100%] mb-4 max-[768px]:text-2xl"
           >
             Август — месяц<br />
             выгодной доставки
@@ -72,27 +78,42 @@
             Самара, Екатеринбург — дешевле на 20%.
           </p>
           <button
-            class="w-76.5 h-19 max-[1440px]:h-13 max-[1440px]:w-60 max-[1440px]:text-base rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="w-76.5 h-19 max-[1440px]:h-13 max-[1024px]:h-19 max-[768px]:h-12 max-[768px]:w-55 max-[1440px]:w-60 max-[1440px]:text-base rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
           >
             Начать сотрудничество
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
         </div>
       </div>
     </div>
-    <main class="max-w-[1920px] max-[1440px]:max-w-5xl mx-auto">
+    <main
+      class="max-w-[1920px] max-[1440px]:max-w-5xl mx-auto max-[1024px]:max-w-3xl max-[768px]:max-w-[360px]"
+    >
       <section
-        class="flex gap-10 mb-23 pl-15 max-[1440px]:pl-10 relative max-[1440px]:mb-20"
+        class="flex gap-10 mb-23 pl-15 max-[1440px]:pl-10 relative max-[1440px]:mb-20 max-[768px]:mb-16 max-[1024px]:pl-5 max-[1024px]:gap-2 max-[768px]:px-4 max-[768px]:flex-col"
       >
         <div class="flex-1">
           <div
             class="flex items-center justify-between max-[1440px]:items-start"
           >
-            <h2 class="title max-[1440px]:mt-20">О компании</h2>
+            <div>
+              <h2
+                class="title max-[1440px]:mt-20 max-[768px]:mt-16 max-[768px]:mb-4"
+              >
+                О компании
+              </h2>
+              <p
+                class="space3 hidden text-xl leading-7 mb-8 max-[768px]:block max-[768px]:text-sm max-[768px]:leading-4.5 max-[768px]:mb-6"
+              >
+                “Грузовые линии” - надежный оператор грузоперевозок,
+                специализирующийся на логистических решениях с 2008 года, и
+                берет на себя весь спектр ваших транспортныз задач
+              </p>
+            </div>
             <img
               src="./assets/icons/about_line.svg"
               alt="about"
@@ -101,27 +122,27 @@
             <img
               src="./assets/icons/aboutLineTablet.svg"
               alt="about"
-              class="hidden max-[1440px]:block"
+              class="hidden max-[1440px]:block max-[768px]:hidden"
             />
           </div>
-          <div class="flex gap-3 mb-3">
-            <div class="about_company_wrap">
+          <div class="flex gap-3 mb-3 max-[1024px]:gap-2 max-[1024px]:mb-2">
+            <div class="about_company_wrap radius_left">
               <div class="about_icon_wrap">
                 <img
                   src="./assets/icons/check.svg"
                   alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
+                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
                 />
               </div>
               <p class="about_title">3000+</p>
               <p class="about_info">Заказов выполняем ежемесячно</p>
             </div>
-            <div class="about_company_wrap rounded-l-4xl! rounded-r-xl!">
+            <div class="about_company_wrap radius_right">
               <div class="about_icon_wrap">
                 <img
                   src="./assets/icons/location.svg"
                   alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
+                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
                 />
               </div>
               <p class="about_title">1700+</p>
@@ -130,24 +151,24 @@
               </p>
             </div>
           </div>
-          <div class="flex gap-3 mb-3">
-            <div class="about_company_wrap rounded-xl!">
+          <div class="flex gap-3 max-[1024px]:gap-2">
+            <div class="about_company_wrap radius_left">
               <div class="about_icon_wrap">
                 <img
                   src="./assets/icons/rubl.svg"
                   alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
+                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
                 />
               </div>
               <p class="about_title">15 млн ₽</p>
               <p class="about_info">Страховое покрытие ответсвенности</p>
             </div>
-            <div class="about_company_wrap rounded-xl!">
+            <div class="about_company_wrap radius_right">
               <div class="about_icon_wrap">
                 <img
                   src="./assets/icons/clock.svg"
                   alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
+                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
                 />
               </div>
               <p class="about_title">17+ лет</p>
@@ -156,7 +177,7 @@
           </div>
         </div>
 
-        <div class="flex-1 relative pt-40 max-[1440px]:pt-20">
+        <div class="flex-1 relative pt-40 max-[1440px]:pt-20 max-[768px]:pt-3">
           <p class="font-medium text-2xl mb-6 space3 max-[1440px]:hidden">
             Логистика для бизнеса
             <span class="text-[#C83A36] leading-8"
@@ -164,56 +185,62 @@
             >
           </p>
           <p
-            class="space3 text-xl leading-7 mb-8 max-w-148 max-[1440px]:text-sm max-[1440px]:leading-4.5"
+            class="space3 text-xl leading-7 mb-8 max-w-148 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:mb-6 max-[768px]:hidden"
           >
             “Грузовые линии” - надежный оператор грузоперевозок,
             специализирующийся на логистических решениях с 2008 года, и берет на
             себя весь спектр ваших транспортныз задач
           </p>
           <button
-            class="w-[18rem] mb-14 h-16 max-[1440px]:h-13 max-[1440px]:w-59.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="w-[18rem] mb-14 max-[768px]:mb-6 h-16 max-[768px]:w-full max-[768px]:text-base! max-[1440px]:h-13 max-[1440px]:w-59.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
           >
             Подробнее о компании
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
           <img
             src="./assets/images/about_company.png"
             alt="about"
-            class="max-[1440px]:object-cover max-[1440px]:h-110 max-[1440px]:mt-20 rounded-l-4xl"
+            class="max-[1440px]:object-cover max-[1440px]:h-110 max-[768ox]:w-82 max-[768px]:h-82 max-[768px]:rounded-3xl! max-[768px]:mt-0 max-[1440px]:mt-20 rounded-l-4xl max-[1024px]:mt-17 max-[1024px]:rounded-l-3xl max-[1024px]:h-102.5"
           />
         </div>
       </section>
       <section
-        class="rounded-[56px] p-15 pb-18 bg-[#E4E6E8] z-100 -mb-15 relative max-[1440px]:p-10"
+        class="rounded-[56px] max-[1024px]:rounded-3xl max-[768px]:rounded-xl p-15 pb-18 bg-[#E4E6E8] z-100 -mb-15 relative max-[1440px]:p-10 max-[768px]:px-4"
       >
-        <h2 class="title mb-14 max-[1440px]:mb-10">Услуги</h2>
+        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-8">Услуги</h2>
 
-        <div class="flex gap-3 mb-3">
+        <div class="flex flex-wrap gap-3">
           <div
-            class="flex-1 p-8 bg-white rounded-l-xl h-125 max-[1440px]:h-80 rounded-r-4xl relative overflow-hidden flex justify-between"
+            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white h-125 max-[1440px]:h-80 max-[768px]:h-60 radius_left relative overflow-hidden flex justify-between"
           >
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7"
+              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:hidden"
             >
               Перевозка <br />
               еврофурами
+            </p>
+            <p
+              class="text-lg text-[#3A3A3A] font-medium block max-[768px]:block"
+            >
+              Перевозка еврофурами
             </p>
             <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
             <img
               src="./assets/images/service1.png"
               alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[1440px]:w-70 max-[1440px]:h-60 max-[1440px]:-right-15"
+              class="absolute bottom-0 right-0 w-120 h-100 max-[768px]:w-47 max-[768px]:h-47 max-[1440px]:w-70 max-[1440px]:h-60 max-[1440px]:-right-15 max-[1024px]:-right-5 max-[1024px]:h-65"
             />
           </div>
+
           <div
-            class="flex-1 p-8 bg-white h-125 max-[1440px]:h-80 overflow-hidden rounded-4xl relative flex justify-between"
+            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white h-125 max-[768px]:h-60 max-[1440px]:h-80 overflow-hidden radius_full radius_servie2 relative flex justify-between"
           >
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7"
+              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
             >
               Городские / пригородные перевозки
             </p>
@@ -221,14 +248,15 @@
             <img
               src="./assets/images/service2.png"
               alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[1440px]:w-70 max-[1440px]:h-60"
+              class="absolute bottom-0 right-0 w-120 h-100 max-[768px]:w-47 max-[768px]:h-47 max-[768px]:right-0 max-[1440px]:w-70 max-[1440px]:h-60 max-[1024px]:right-8"
             />
           </div>
+
           <div
-            class="flex-1 p-8 bg-white rounded-r-xl h-125 max-[1440px]:h-80 overflow-hidden rounded-l-4xl relative flex justify-between"
+            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white radius_right max-[768px]:h-60 radius_servie3 h-125 max-[1440px]:h-80 overflow-hidden relative flex justify-between"
           >
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7"
+              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
             >
               Доставка выделенным транспортом в РЦ
             </p>
@@ -236,16 +264,15 @@
             <img
               src="./assets/images/service3.png"
               alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[1440px]:w-70 max-[1440px]:h-60"
+              class="absolute bottom-0 right-0 w-120 h-100 max-[1440px]:w-70 max-[768px]:w-45 max-[768px]:h-45 max-[768px]:right-0 max-[1440px]:h-60 max-[1024px]:right-11 max-[1024px]:bottom-2 max-[1024px]:w-60 max-[1024px]:h-50"
             />
           </div>
-        </div>
-        <div class="flex gap-3">
+
           <div
-            class="flex-1 p-8 bg-white rounded-l-xl overflow-hidden h-125 max-[1440px]:h-80 rounded-r-4xl relative flex justify-between"
+            class="flex-1 basis-[calc(50%-0.375rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white radius_left max-[768px]:h-60 radius_servie2 overflow-hidden h-125 max-[1440px]:h-80 relative flex justify-between"
           >
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7"
+              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
             >
               Доставка малотоннажным транспортом
             </p>
@@ -253,14 +280,15 @@
             <img
               src="./assets/images/service4.png"
               alt="service1"
-              class="absolute bottom-0 right-0 w-185 h-120 object-cover max-[1440px]:w-110 max-[1440px]:h-70"
+              class="absolute bottom-0 right-0 w-185 h-120 object-cover max-[768px]:w-[95%] max-[768px]:bottom-2 max-[768px]:h-40 max-[768px]:right-0 max-[1440px]:w-110 max-[1440px]:h-70 max-[1024px]:-right-10 max-[1024px]:h-50 max-[1024px]:bottom-5"
             />
           </div>
+
           <div
-            class="flex-1 p-8 bg-white rounded-r-xl h-125 max-[1440px]:h-80 rounded-l-4xl relative flex justify-between"
+            class="flex-1 basis-[calc(50%-0.375rem)] max-[1024px]:basis-full min-w-[300px] p-8 bg-white h-125 max-[768px]:h-60 max-[1440px]:h-80 radius_right radius_servie5 relative flex justify-between"
           >
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7"
+              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
             >
               Перевозка догрузом
             </p>
@@ -268,26 +296,35 @@
             <img
               src="./assets/images/service5.png"
               alt="service1"
-              class="absolute bottom-0 right-0 w-195 h-130 object-cover max-[1440px]:w-90 max-[1440px]:h-70"
+              class="absolute bottom-0 right-0 w-195 h-130 object-cover max-[1440px]:w-90 max-[1440px]:h-70 max-[1024px]:hidden"
+            />
+            <img
+              src="./assets/images/service5.png"
+              alt="service1"
+              class="absolute bottom-0 min-[768px]:left-11 w-135 h-70 object-cover hidden max-[1024px]:block max-[768px]:w-75 max-[768px]:h-50 max-[768px]:right-0!"
             />
           </div>
         </div>
       </section>
       <section
-        class="px-15 p-40 pt-42.5 max-[1440px]:px-10 max-[1440px]:pt-22 max-[1440px]:pb-12 bg-[#3A3A3A] -z-10 rounded-b-4xl mb-45 max-[1440px]:mb-20"
+        class="px-15 p-40 pt-42.5 max-[768px]:mb-10 max-[1440px]:px-10 max-[768px]:pb-4 max-[768px]:rounded-xl max-[768px]:px-4 max-[768px]:pt-27 max-[1440px]:pt-22 max-[1440px]:pb-12 bg-[#3A3A3A] -z-10 rounded-b-4xl max-[1024px]:rounded-3xl mb-45 max-[1440px]:mb-20"
       >
-        <h2 class="title text-white! mb-14 max-[1440px]:mb-10">Преимущества</h2>
-        <div class="flex gap-3 mb-3">
+        <h2 class="title text-white! mb-14 max-[1440px]:mb-10 max-[768px]:mb-8">
+          Преимущества
+        </h2>
+        <div class="flex gap-3 mb-3 max-[768px]:flex-col">
           <div
-            class="flex-1 p-12 max-[1440px]:p-6 bg-[#FFFFFF1A] rounded-l-xl rounded-r-4xl"
+            class="flex-1 shrink-0 p-12 max-[1440px]:p-6 max-[1024px]:p-3 bg-[#FFFFFF1A] radius_left"
           >
             <div class="flex justify-between mb-8">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Безопасность
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/secure.svg"
                   alt="secure"
@@ -296,19 +333,23 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               Страхование на 15 млн и официальная ответственность
             </p>
           </div>
-          <div class="flex-1 p-12 max-[1440px]:p-6 bg-[#FFFFFF1A] rounded-4xl">
+          <div
+            class="flex-1 shrink-0 p-12 max-[1440px]:p-6 max-[1024px]:p-3 bg-[#FFFFFF1A] radius_full"
+          >
             <div class="flex justify-between mb-8 gap-3">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Современный автопарк
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/auto.svg"
                   alt="auto"
@@ -317,21 +358,23 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               Только новые европейские машины
             </p>
           </div>
           <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 rounded-r-xl rounded-l-4xl"
+            class="flex-1 shrink-0 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_right"
           >
             <div class="flex justify-between mb-8">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Прозрачные цены
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/rubl2.svg"
                   alt="rubl"
@@ -340,24 +383,26 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               Персональные условия для оптимизации ваших затрат с фиксацией
               тарифа в договоре
             </p>
           </div>
         </div>
-        <div class="flex gap-3">
+        <div class="flex gap-3 max-[768px]:flex-col">
           <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 rounded-l-xl rounded-r-4xl"
+            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_left"
           >
             <div class="flex justify-between mb-8">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 max-[1024px]:break-all max-[768px]:break-normal font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Отлаженный документооборот
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/documents.svg"
                   alt="documents"
@@ -366,19 +411,23 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               Тщательная проверка накладных и возврат оригиналов за 14 дней
             </p>
           </div>
-          <div class="flex-1 p-12 bg-[#FFFFFF1A] rounded-4xl max-[1440px]:p-6">
+          <div
+            class="flex-1 p-12 bg-[#FFFFFF1A] radius_full max-[1440px]:p-6 max-[1024px]:p-3"
+          >
             <div class="flex justify-between mb-8 gap-3">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 max-[1024px]:break-all font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Команда профессионалов
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/team.svg"
                   alt="team"
@@ -387,21 +436,23 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               Личный менеджер, логист, специалист по документообороту
             </p>
           </div>
           <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 rounded-r-xl rounded-l-4xl"
+            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_right"
           >
             <div class="flex justify-between mb-8">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7"
+                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
               >
                 Контроль на всех этапах
               </p>
-              <div class="about_icon_wrap mb-0!">
+              <div
+                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+              >
                 <img
                   src="./assets/icons/control.svg"
                   alt="control"
@@ -410,7 +461,7 @@
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5"
+              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
             >
               С фото и видео-фиксацией на погрузке и выгрузке, отслеживание
               груза
@@ -418,68 +469,90 @@
           </div>
         </div>
       </section>
-      <section class="px-15 mb-46">
-        <h2 class="title mb-14">Как мы работаем</h2>
+      <section class="px-15 mb-46 max-[1440px]:mb-20 max-[1440px]:p-10">
+        <h2 class="title mb-14 max-[1440px]:mb-10">Как мы работаем</h2>
         <div class="flex gap-3">
-          <div class="bg-[#F2F5F7] rounded-l-xl rounded-r-4xl p-8 flex-1">
-            <div class="about_icon_wrap mb-10!">
+          <div class="bg-[#F2F5F7] radius_left p-8 max-[1440px]:p-6 flex-1">
+            <div class="about_icon_wrap mb-10! max-[1440px]:mb-8!">
               <p class="text-white space3 text-2xl leading-8">01</p>
             </div>
-            <p class="space3 font-medium text-[2rem] leading-10 mb-6">
+            <p
+              class="space3 font-medium text-[2rem] leading-10 mb-6 max-[1440px]:text-2xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+            >
               Оставляете заявку
             </p>
-            <p class="text-[#3A3A3A] text-xl space3 leading-7">
+            <p
+              class="text-[#3A3A3A] text-xl space3 leading-7 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+            >
               По телефону e-mail или через сайт
             </p>
           </div>
-          <div class="bg-[#F2F5F7] rounded-4xl p-8 flex-1">
-            <div class="about_icon_wrap mb-10!">
+          <div class="bg-[#F2F5F7] radius_full p-8 max-[1440px]:p-6 flex-1">
+            <div class="about_icon_wrap mb-10! max-[1440px]:mb-8!">
               <p class="text-white space3 text-2xl leading-8">02</p>
             </div>
-            <p class="space3 font-medium text-[2rem] leading-10 mb-6">
+            <p
+              class="space3 font-medium text-[2rem] leading-10 mb-6 max-[1440px]:text-2xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+            >
               Бронируем транспорт
             </p>
-            <p class="text-[#3A3A3A] text-xl space3 leading-7">
+            <p
+              class="text-[#3A3A3A] text-xl space3 leading-7 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+            >
               Согласовываем детали маршрута(сроки, ставка, особенность)
             </p>
           </div>
-          <div class="bg-[#F2F5F7] rounded-4xl p-8 flex-1">
-            <div class="about_icon_wrap mb-10!">
+          <div class="bg-[#F2F5F7] radius_full p-8 max-[1440px]:p-6 flex-1">
+            <div class="about_icon_wrap mb-10! max-[1440px]:mb-8!">
               <p class="text-white space3 text-2xl leading-8">03</p>
             </div>
-            <p class="space3 font-medium text-[2rem] leading-10 mb-6">
+            <p
+              class="space3 font-medium text-[2rem] leading-10 mb-6 max-[1440px]:text-2xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+            >
               Доставляем груз
             </p>
-            <p class="text-[#3A3A3A] text-xl space3 leading-7">
+            <p
+              class="text-[#3A3A3A] text-xl space3 leading-7 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+            >
               Погрузка, разгрузка, контроль и сопровождение
             </p>
           </div>
-          <div class="bg-[#F2F5F7] rounded-r-xl rounded-l-4xl p-8 flex-1">
-            <div class="about_icon_wrap mb-10!">
+          <div class="bg-[#F2F5F7] radius_right p-8 max-[1440px]:p-6 flex-1">
+            <div class="about_icon_wrap mb-10! max-[1440px]:mb-8!">
               <p class="text-white space3 text-2xl leading-8">04</p>
             </div>
-            <p class="space3 font-medium text-[2rem] leading-10 mb-6">
+            <p
+              class="space3 font-medium text-[2rem] leading-10 mb-6 max-[1440px]:text-2xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+            >
               Возвращаем документы
             </p>
-            <p class="text-[#3A3A3A] text-xl space3 leading-7">
+            <p
+              class="text-[#3A3A3A] text-xl space3 leading-7 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+            >
               подписанные оригиналы в течение 14 дней
             </p>
           </div>
         </div>
       </section>
       <section
-        class="rounded-[56px] bg-[#3A3A3A] contact_section px-15 py-40 flex justify-between mb-30"
+        class="rounded-[56px] max-[1024px]:rounded-3xl bg-[#3A3A3A] contact_section px-15 py-40 flex justify-between mb-30 max-[1440px]:mb-20 max-[1440px]:p-10"
       >
         <div class="flex flex-col justify-between z-10">
-          <p class="space3 font-medium text-[5rem] leading-[100%] text-white">
+          <p
+            class="space3 font-medium text-[5rem] max-[1440px]:text-5xl leading-[100%] text-white max-[1024px]:text-[2rem]"
+          >
             Оставьте заявку <br />на сотрудничество
           </p>
-          <p class="text-[2rem] text-white font-medium leading-8">
+          <p
+            class="text-[2rem] text-[#ffffff99] font-medium leading-8 max-[1440px]:text-xl max-[1440px]:leading-6 max-[1024px]:text-lg"
+          >
             Свяжемся с вами в течении часа
           </p>
         </div>
-        <div class="max-w-[45%] w-full z-10">
-          <div class="flex gap-6 mb-6 w-full">
+        <div class="max-w-[45%] w-full z-10 max-[1024px]:max-w-[50%]">
+          <div
+            class="flex gap-6 mb-6 w-full max-[1440px]:gap-3 max-[1440px]:mb-3"
+          >
             <input type="text" class="input_form" placeholder="Ваше имя" />
             <input
               type="phone"
@@ -492,45 +565,52 @@
             class="input_form w-full! pt-6 h-33.5! mb-12"
           ></textarea>
           <button
-            class="w-60 h-19 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="w-60 h-19 max-[1440px]:h-13 max-[1440px]:w-46.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
           >
             Оставить заявку
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
         </div>
       </section>
-      <section class="px-15 mb-44">
+      <section class="px-15 mb-44 max-[1440px]:mb-20">
         <div class="flex items-center justify-between mb-14">
           <h2 class="title">Отзывы</h2>
           <button
-            class="w-44.5 h-16 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="w-44.5 h-16 max-[1440px]:h-13 max-[1440px]:w-37 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
           >
             Все отзывы
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
         </div>
-        <div class="grid grid-cols-3 gap-3">
-          <div class="bg-[#F2F5F7] p-12 rounded-l-xl rounded-r-4xl">
-            <div class="flex justify-between items-center mb-14">
+        <div class="grid grid-cols-3 gap-3 max-[1440px]:grid-cols-2">
+          <div class="bg-[#F2F5F7] p-12 radius_left max-[1024px]:p-6">
+            <div class="flex justify-between mb-14 max-[1024px]:mb-10">
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -538,19 +618,30 @@
               перечисления собранной выручки, аккуратность документооборота.
             </p>
           </div>
-          <div class="bg-[#F2F5F7] p-12 rounded-4xl">
-            <div class="flex justify-between items-center mb-14">
+          <div
+            class="bg-[#F2F5F7] p-12 radius_full radius_comment_right max-[1024px]:p-6"
+          >
+            <div
+              class="flex justify-between items-center mb-14 max-[1024px]:mb-10"
+            >
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -558,19 +649,30 @@
               перечисления собранной выручки, аккуратность документооборота.
             </p>
           </div>
-          <div class="bg-[#F2F5F7] p-12 rounded-r-xl rounded-l-4xl">
-            <div class="flex justify-between items-center mb-14">
+          <div
+            class="bg-[#F2F5F7] p-12 radius_right radius_comment_left max-[1024px]:p-6"
+          >
+            <div
+              class="flex justify-between items-center mb-14 max-[1024px]:mb-10"
+            >
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -578,19 +680,30 @@
               перечисления собранной выручки, аккуратность документооборота.
             </p>
           </div>
-          <div class="bg-[#F2F5F7] p-12 rounded-l-xl rounded-r-4xl">
-            <div class="flex justify-between items-center mb-14">
+          <div
+            class="bg-[#F2F5F7] p-12 radius_left radius_comment_right max-[1024px]:p-6"
+          >
+            <div
+              class="flex justify-between items-center mb-14 max-[1024px]:mb-10"
+            >
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -598,19 +711,30 @@
               перечисления собранной выручки, аккуратность документооборота.
             </p>
           </div>
-          <div class="bg-[#F2F5F7] p-12 rounded-4xl">
-            <div class="flex justify-between items-center mb-14">
+          <div
+            class="bg-[#F2F5F7] p-12 radius_full radius_comment_left max-[1024px]:p-6"
+          >
+            <div
+              class="flex justify-between items-center mb-14 max-[1024px]:mb-10"
+            >
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -618,19 +742,28 @@
               перечисления собранной выручки, аккуратность документооборота.
             </p>
           </div>
-          <div class="bg-[#F2F5F7] p-12 rounded-r-xl rounded-l-4xl">
-            <div class="flex justify-between items-center mb-14">
+          <div class="bg-[#F2F5F7] p-12 radius_right max-[1024px]:p-6">
+            <div
+              class="flex justify-between items-center mb-14 max-[1024px]:mb-10"
+            >
               <div>
                 <p
-                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2"
+                  class="space3 text-[2rem] font-medium leading-10 text-[#3A3A3A] mb-2 max-[1024px]:text-2xl max-[1024px]:leading-7"
                 >
                   Мария
                 </p>
-                <p class="space3 font-medium text-[#3A3A3A]">04.07. 2025</p>
+                <p
+                  class="space3 font-medium text-[#3A3A3A] max-[1024px]:text-xs"
+                >
+                  04.07. 2025
+                </p>
               </div>
-              <img src="./assets/icons/kovichka.svg" />
+              <img
+                src="./assets/icons/kovichka.svg"
+                class="max-[1024px]:w-8 max-[1024px]:h-8"
+              />
             </div>
-            <p class="space3 text-xl text-[#3A3A3A]">
+            <p class="space3 text-xl text-[#3A3A3A] max-[1024px]:text-xs">
               Компания ООО «Транспортное Агентство Подорожник» удовлетворяет
               всем требованиям , касающимся выполнения клиентского сервиса
               интернет-магазина МЕТРО Кэш энд Керри О,а именно: своевременность
@@ -641,78 +774,99 @@
         </div>
       </section>
       <section
-        class="bg-[#E4E6E8] rounded-[56px] px-15 py-40 flex justify-between mb-30"
+        class="bg-[#E4E6E8] rounded-[56px] max-[1024px]:rounded-3xl max-[1024px]:px-8 px-15 py-40 flex justify-between max-[1024px]:flex-col max-[1024px]:gap-10 mb-30 max-[1440px]:p-10 max-[1440px]:mb-20"
       >
         <div>
-          <h2 class="title mb-8">Наши партнеры</h2>
-          <p class="text-xl max-w-90 text-[#3A3A3A]">
-            Нам доверяют крупнейшие компании и малый бизнес по всей стране
-          </p>
+          <div class="max-[1024px]:flex justify-between items-center">
+            <h2 class="title mb-8 max-[1024px]:mb-0">Наши партнеры</h2>
+            <p
+              class="text-xl max-w-90 text-[#3A3A3A] max-[1440px]:text-base max-[1024px]:text-sm"
+            >
+              Нам доверяют крупнейшие компании и малый бизнес по всей стране
+            </p>
+          </div>
         </div>
-        <div class="max-w-[70%] w-full grid grid-cols-3 gap-3">
+        <div
+          class="max-w-[70%] w-full grid grid-cols-3 gap-3 max-[1204px]:max-w-full"
+        >
           <div
-            class="rounded-l-xl rounded-r-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_left bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner1.svg" />
+            <img
+              src="./assets/icons/partner1.svg"
+              class="max-[1440px]:w-22.5"
+            />
           </div>
           <div
-            class="rounded-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_full bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner2.svg" />
+            <img
+              src="./assets/icons/partner2.svg"
+              class="max-[1440px]:w-25.5"
+            />
           </div>
           <div
-            class="rounded-r-xl rounded-l-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_right bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner3.svg" />
+            <img
+              src="./assets/icons/partner3.svg"
+              class="max-[1440px]:w-38.5"
+            />
           </div>
           <div
-            class="rounded-l-xl rounded-r-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_left bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner4.svg" />
+            <img src="./assets/icons/partner4.svg" class="max-[1440px]:w-36" />
           </div>
           <div
-            class="rounded-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_full bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner5.svg" />
+            <img src="./assets/icons/partner5.svg" class="max-[1440px]:w-24" />
           </div>
           <div
-            class="rounded-r-xl rounded-l-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_right bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner6.svg" />
+            <img
+              src="./assets/icons/partner6.svg"
+              class="max-[1440px]:w-23.5"
+            />
           </div>
           <div
-            class="rounded-l-xl rounded-r-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_left bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner7.svg" />
+            <img src="./assets/icons/partner7.svg" class="max-[1440px]:w-17" />
           </div>
           <div
-            class="rounded-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_full bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner8.svg" />
+            <img src="./assets/icons/partner8.svg" class="max-[1440px]:w-24" />
           </div>
           <div
-            class="rounded-r-xl rounded-l-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_right bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner9.svg" />
+            <img src="./assets/icons/partner9.svg" class="max-[1440px]:w-37" />
           </div>
           <div
-            class="rounded-l-xl rounded-r-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_left bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner10.svg" />
+            <img
+              src="./assets/icons/partner10.svg"
+              class="max-[1440px]:w-31.5"
+            />
           </div>
           <div
-            class="rounded-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_full bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner11.svg" />
+            <img src="./assets/icons/partner11.svg" class="max-[1440px]:w-38" />
           </div>
           <div
-            class="rounded-r-xl rounded-l-4xl bg-white py-7.5 flex items-center justify-center"
+            class="radius_right bg-white py-7.5 flex items-center justify-center"
           >
-            <img src="./assets/icons/partner12.svg" />
+            <img src="./assets/icons/partner12.svg" class="max-[1440px]:w-40" />
           </div>
         </div>
       </section>
-      <section class="px-15">
+      <section class="px-15 max-[1440px]:px-10">
         <h2 class="title mb-14">FAQ</h2>
         <div class="p-12 rounded-3xl mb-3 bg-[#F2F5F7]">
           <div class="flex items-center justify-between">
@@ -754,7 +908,7 @@
             <img src="./assets/icons/arrowDown.svg" alt="faq" />
           </div>
         </div>
-        <div class="p-12 rounded-3xl mb-36 bg-[#F2F5F7]">
+        <div class="p-12 rounded-3xl mb-36 max-[1440px]:mb-20 bg-[#F2F5F7]">
           <div class="flex items-center justify-between">
             <p class="space3 text-[2rem] font-medium leading-10">
               Какие документы нужны для оформления перевозки?
@@ -764,18 +918,24 @@
         </div>
       </section>
       <section
-        class="rounded-[56px] bg-[#3A3A3A] contact_section px-15 py-40 flex justify-between mb-30"
+        class="rounded-[56px] max-[1024px]:rounded-3xl bg-[#3A3A3A] contact_section px-15 py-40 flex justify-between mb-30 max-[1440px]:mb-20 max-[1440px]:p-10"
       >
         <div class="flex flex-col justify-between z-10">
-          <p class="space3 font-medium text-[5rem] leading-[100%] text-white">
+          <p
+            class="space3 font-medium text-[5rem] max-[1440px]:text-5xl leading-[100%] text-white max-[1024px]:text-[2rem]"
+          >
             Оставьте заявку <br />на сотрудничество
           </p>
-          <p class="text-[2rem] text-white font-medium leading-8">
+          <p
+            class="text-[2rem] text-[#ffffff99] font-medium leading-8 max-[1440px]:text-xl max-[1440px]:leading-6 max-[1024px]:text-lg"
+          >
             Свяжемся с вами в течении часа
           </p>
         </div>
-        <div class="max-w-[45%] w-full z-10">
-          <div class="flex gap-6 mb-6 w-full">
+        <div class="max-w-[45%] w-full z-10 max-[1024px]:max-w-[50%]">
+          <div
+            class="flex gap-6 mb-6 w-full max-[1440px]:gap-3 max-[1440px]:mb-3"
+          >
             <input type="text" class="input_form" placeholder="Ваше имя" />
             <input
               type="phone"
@@ -788,34 +948,39 @@
             class="input_form w-full! pt-6 h-33.5! mb-12"
           ></textarea>
           <button
-            class="w-60 h-19 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="w-60 h-19 max-[1440px]:h-13 max-[1440px]:w-46.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
           >
             Оставить заявку
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
         </div>
       </section>
-      <section class="px-15 py-42.5 bg-[#E4E6E8]">
-        <div class="flex items-center justify-between mb-14">
+      <section
+        class="px-15 py-42.5 bg-[#E4E6E8] max-[1440px]:px-12 max-[1440px]:py-14 max-[1440px]:pb-17 max-[1024px]:rounded-t-3xl max-[1024px]:px-5 max-[1024px]:pt-10"
+      >
+        <div class="flex items-center justify-between mb-14 max-[1440px]:mb-10">
           <h2 class="title">Новости компании</h2>
           <button
-            class="h-16 w-46.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+            class="h-16 w-46.5 max-[1024px]:hidden max-[1440px]:h-16 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl! text-white"
           >
             Все новости
             <img
               src="./assets/icons/chevron.svg"
               alt="chevron"
-              class="-rotate-90 mt-[0.45rem]"
+              class="-rotate-90"
             />
           </button>
         </div>
-        <div class="flex gap-6">
-          <div>
-            <img src="./assets/images/news1.png" class="mb-4" />
+        <div class="flex gap-6 max-[1440px]:overflow-auto">
+          <div class="max-[1440px]:w-108 min-[1440px]:flex-1 shrink-0">
+            <img
+              src="./assets/images/news1.png"
+              class="mb-4 max-[1440px]:object-cover max-[1440px]:w-108 max-[1440px]:h-87.5"
+            />
             <p
               class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2"
             >
@@ -827,8 +992,12 @@
             </p>
             <p class="#3A3A3A space3">28 июня 2025</p>
           </div>
-          <div>
-            <img src="./assets/images/news2.png" class="mb-4" />
+          <div class="max-[1440px]:w-108 min-[1440px]:flex-1 shrink-0">
+            <img
+              src="./assets/images/news2.png"
+              class="mb-4"
+              class="mb-4 max-[1440px]:object-cover max-[1440px]:w-108 max-[1440px]:h-87.5"
+            />
             <p
               class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2"
             >
@@ -840,8 +1009,12 @@
             </p>
             <p class="#3A3A3A space3">19 июня 2025</p>
           </div>
-          <div>
-            <img src="./assets/images/news3.png" class="mb-4" />
+          <div class="max-[1440px]:w-108 min-[1440px]:flex-1 shrink-0">
+            <img
+              src="./assets/images/news3.png"
+              class="mb-4"
+              class="mb-4 max-[1440px]:object-cover max-[1440px]:w-108 max-[1440px]:h-87.5"
+            />
             <p
               class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2"
             >
@@ -853,8 +1026,12 @@
             </p>
             <p class="#3A3A3A space3">5 июня 2025</p>
           </div>
-          <div>
-            <img src="./assets/images/news4.png" class="mb-4" />
+          <div class="max-[1440px]:w-108 min-[1440px]:flex-1 shrink-0">
+            <img
+              src="./assets/images/news4.png"
+              class="mb-4"
+              class="mb-4 max-[1440px]:object-cover max-[1440px]:w-108 max-[1440px]:h-87.5"
+            />
             <p
               class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2"
             >
@@ -867,12 +1044,22 @@
             <p class="#3A3A3A space3">1 июля 2025</p>
           </div>
         </div>
+        <button
+          class="w-full h-16 rounded-xl mt-10 hidden max-[1024px]:flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl! text-white"
+        >
+          Все новости
+          <img
+            src="./assets/icons/chevron.svg"
+            alt="chevron"
+            class="-rotate-90"
+          />
+        </button>
       </section>
     </main>
     <footer
-      class="bg-[#3A3A3A] p-15 pb-8 rounded-t-[56px] -mt-18 max-w-480 mx-auto footer_section"
+      class="bg-[#3A3A3A] p-15 pb-8 max-[1024px]:pb-36 rounded-t-[56px] max-[1024px]:max-w-3xl max-[1024px]:px-5 relative max-[1440px]:rounded-t-3xl z-20 -mt-18 max-[1440px]:px-10 max-[1440px]:-mt-5 max-w-[1920px] max-[1440px]:max-w-5xl mx-auto footer_section"
     >
-      <div class="flex items-center justify-between mb-19.5">
+      <div class="flex items-center justify-between mb-19.5 z-2000 relative">
         <img src="./assets/icons/logo.svg" alt="logo" />
         <div class="flex gap-3">
           <div class="footer_icon_wrap">
@@ -886,11 +1073,11 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between">
+      <div class="flex justify-between z-10 max-[1024px]:mb-5">
         <div class="flex flex-col justify-between">
           <div>
             <p
-              class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7"
+              class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7 max-[1024px]:text-lg"
             >
               Грузоперевозки
             </p>
@@ -907,14 +1094,24 @@
               <li class="text-white space3 font-medium mb-3">
                 Грузоперевозки 5 тонны
               </li>
+              <li class="text-white space3 font-medium mb-3">
+                Грузоперевозки 10 тонны
+              </li>
+              <li class="text-white space3 font-medium mb-3">
+                Грузоперевозки 20 тонны
+              </li>
             </ul>
           </div>
-          <p class="text-[#ffffff99] space3">
+          <p
+            class="text-[#ffffff99] space3 max-[1440px]:absolute max-[1440px]:bottom-8"
+          >
             © 2025, ООО АТЭК «Грузовые линии»
           </p>
         </div>
         <div>
-          <p class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7">
+          <p
+            class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7 max-[1024px]:text-lg"
+          >
             Автоперевозки
           </p>
           <ul>
@@ -930,7 +1127,9 @@
           </ul>
         </div>
         <div>
-          <p class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7">
+          <p
+            class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7 max-[1024px]:text-lg"
+          >
             Разделы
           </p>
           <ul>
@@ -942,15 +1141,17 @@
             <li class="text-white space3 font-medium mb-3">Контакты</li>
           </ul>
         </div>
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between max-[1024px]:hidden">
           <div class="mb-20">
             <p
-              class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7"
+              class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7 max-[1024px]:text-lg"
             >
-              Разделы
+              Контакты
             </p>
             <ul>
-              <li class="text-white space3 font-medium mb-3 max-w-108">
+              <li
+                class="text-white space3 font-medium mb-3 max-w-108 max-[1440px]:max-w-60"
+              >
                 ООО АТЭК «Грузовые линии» 630071, Новосибирск, ул. Станционная,
                 62/1, офис 416
               </li>
@@ -967,8 +1168,36 @@
               <li class="text-white space3 font-medium">Контакты</li>
             </ul>
           </div>
-          <p class="text-[#ffffff99] space3">Политика конфиденциальности</p>
+          <p class="text-[#ffffff99] space3 max-[1440px]:hidden">
+            Политика конфиденциальности
+          </p>
         </div>
+      </div>
+      <div class="hidden max-[1024px]:block">
+        <p
+          class="text-[#ffffff99] mb-4 text-xl space3 font-medium leading-7 max-[1024px]:text-lg"
+        >
+          Контакты
+        </p>
+        <ul>
+          <li
+            class="text-white space3 font-medium mb-3 max-w-108 max-[1440px]:max-w-60"
+          >
+            ООО АТЭК «Грузовые линии» 630071, Новосибирск, ул. Станционная,
+            62/1, офис 416
+          </li>
+          <li class="text-white space3 font-medium mb-3">
+            тел. +7 (383)230-56-76
+          </li>
+          <li class="text-white space3 font-medium mb-3">
+            230-56-77, 230-06-13
+          </li>
+          <li class="text-white space3 font-medium mb-3">
+            e-mail: tkcargo-lines@yandex.ru
+          </li>
+          <li class="text-white space3 font-medium mb-3">Отзывы</li>
+          <li class="text-white space3 font-medium">Контакты</li>
+        </ul>
       </div>
     </footer>
   </body>
