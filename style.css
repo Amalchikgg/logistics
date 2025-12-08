@@ -365,3 +365,67 @@ button {
     transform-origin: center center;
   }
 }
+
+.burger-menu.active .burger-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+  background: #3a3a3a;
+  position: absolute; /* fixed, чтобы меню всегда поверх страницы */
+  top: 0%; /* под хедером */
+  left: 0px; /* ПО КОНТЕЙНЕРУ */
+  width: 100%;
+
+  height: calc(100vh); /* меню на весь экран */
+
+  transform: translateX(-110%); /* спрятано */
+  transition: 0.3s ease;
+  padding-top: 20px;
+  opacity: 0;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.menu.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-item {
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 1px solid #4a4a4a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.menu-item:hover {
+  background: #444;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-arrow {
+  font-size: 14px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
