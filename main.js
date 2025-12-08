@@ -28,3 +28,24 @@ document.addEventListener("click", (e) => {
 
 // Клик по самому меню — не закрываем
 menu.addEventListener("click", (e) => e.stopPropagation());
+
+//Slider
+
+const swiper = new Swiper(".mySwiper", {
+  loop: true, // бесконечный слайдер
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  autoHeight: true, // подстраивает высоту под активный слайд
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

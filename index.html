@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link href="./output.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
+
     <title>Logistics</title>
   </head>
   <body>
@@ -119,18 +124,84 @@
     </header>
 
     <div
-      class="relative -mt-8 max-[1440px]:-mt-23 -z-10 max-w-[1920px] max-[1440px]:max-w-5xl mx-auto max-[1024px]:max-w-3xl max-[768px]:max-w-[360px]"
+      class="swiper mySwiper relative -mt-8 max-[1440px]:-mt-23 overflow-hidden -z-10 max-w-[1920px] max-[1440px]:max-w-5xl mx-auto max-[1024px]:max-w-3xl max-[768px]:max-w-[360px]"
     >
-      <img
-        src="./assets/images/main.png"
-        alt="main"
-        class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-      />
-      <img
-        src="./assets/images/mainTablet.png"
-        alt="main"
-        class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
-      />
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/main.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
+          />
+          <img
+            src="./assets/images/mainTablet.png"
+            alt="main"
+            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
       <div
         class="flex justify-between absolute w-full top-0 z-10 px-15 pt-22.5 max-[1440px]:pt-32.5 max-[768px]:px-5 max-[768px]:pt-30"
       >
@@ -1126,16 +1197,18 @@
           class="flex items-center justify-between mb-14 max-[1440px]:mb-10 max-[768px]:flex-col max-[768px]:gap-6 max-[768px]:items-start"
         >
           <h2 class="title">Новости компании</h2>
-          <button
-            class="h-16 w-46.5 max-[768px]:flex max-[768px]:h-13 max-[768px]:text-base! max-[1024px]:hidden max-[1440px]:h-16 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl! text-white"
-          >
-            Все новости
-            <img
-              src="./assets/icons/chevron.svg"
-              alt="chevron"
-              class="-rotate-90"
-            />
-          </button>
+          <a href="/news.html">
+            <button
+              class="h-16 w-46.5 max-[768px]:flex max-[768px]:h-13 max-[768px]:text-base! max-[1024px]:hidden max-[1440px]:h-16 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl! text-white"
+            >
+              Все новости
+              <img
+                src="./assets/icons/chevron.svg"
+                alt="chevron"
+                class="-rotate-90"
+              />
+            </button>
+          </a>
         </div>
         <div class="flex gap-6 max-[1440px]:overflow-auto">
           <div
@@ -1370,5 +1443,6 @@
       </div>
     </footer>
   </body>
-  <script src="main.js"></script>
+  <script src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </html>
