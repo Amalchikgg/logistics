@@ -966,6 +966,11 @@
       width: calc(var(--spacing) * 82);
     }
   }
+  .max-\[3000px\]\:max-h-\[950px\] {
+    @media (width < 3000px) {
+      max-height: 950px;
+    }
+  }
   .max-\[1920px\]\:h-160 {
     @media (width < 1920px) {
       height: calc(var(--spacing) * 160);
