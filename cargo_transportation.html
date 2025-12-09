@@ -4,40 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
     <link href="./output.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
-
-    <title>Logistics</title>
+    <link href="./priceList.css" rel="stylesheet" />
+    <title>News</title>
   </head>
   <body>
     <header
       class="top-0 relative max-[768px]:ronded-xl max-[768px]:px-4 max-[768px]:py-3.5 mx-auto z-100 bg-[#3A3A3A] py-6 px-10 max-[1440px]:py-6 max-[1440px]:px-10 max w-full rounded-b-[25px] border-b border-b-[#FFFFFF33] flex justify-between items-center"
     >
       <div class="flex gap-6 items-center">
-        <img
-          src="./assets/icons/logo.svg"
-          alt="logo"
-          class="mr-6 max-[768px]:w-25 max-[768px]:h-7"
-        />
+        <a href="/">
+          <img
+            src="./assets/icons/logo.svg"
+            alt="logo"
+            class="mr-6 max-[768px]:w-25 max-[768px]:h-7"
+          />
+        </a>
         <div class="flex gap-6 max-[1440px]:hidden">
           <div class="flex items-center gap-1">
-            <a
-              href="./cargo_transportation.html"
-              class="text-white font-medium text-xl"
-            >
+            <p class="text-white font-medium text-xl leading-[100%]">
               Грузоперевозки
-            </a>
+            </p>
             <img src="./assets/icons/chevron.svg" alt="chevron" />
           </div>
           <div class="flex items-center gap-1">
             <p class="header_title">Автоперевозки</p>
             <img src="./assets/icons/chevron.svg" alt="chevron" />
           </div>
-          <p class="header_title">Расчет стоимости</p>
+          <a class="header_title">Расчет стоимости</a>
           <a href="./pricelist.html" class="header_title">Прайс-лист</a>
         </div>
       </div>
@@ -87,12 +82,11 @@
         </div>
         <div class="px-5">
           <div class="flex items-center gap-1 justify-between mb-8">
-            <a
-              href="./cargo_transportation.html"
+            <p
               class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
             >
               Грузоперевозки
-            </a>
+            </p>
             <img src="./assets/icons/chevron.svg" alt="chevron" class="mt-1" />
           </div>
           <div class="flex items-center gap-1 justify-between mb-8">
@@ -109,7 +103,7 @@
             Расчет стоимости
           </p>
           <a
-            href="/pricelist.html"
+            href="./pricelist.html"
             class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem] mb-8"
           >
             Прайс-лист
@@ -127,496 +121,351 @@
         </div>
       </div>
     </header>
-
     <div
-      class="swiper mySwiper relative -mt-8 max-[1440px]:-mt-23 overflow-hidden -z-10 mx-auto"
+      class="bg-[#3A3A3A] overflow-hidden max-[1440px]:rounded-b-3xl max-[768px]:mb-20 relative max-[768px]:px-4 max-[768px]:pb-9 max-[768px]:pt-14.5 max-[1440px]:mb-25 max-[1024px]:px-5 p-15 pt-22.5 max-[1440px]:pb-8 -mt-7.5 max-[1440px]:pt-13.5 rounded-b-[56px] mb-40 mx-auto"
     >
-      <div class="swiper-wrapper max-h-[950px] max-[1440px]:max-h-[850px]">
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="./assets/images/main.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] max-[1440px]:hidden"
-          />
-          <img
-            src="./assets/images/mainTablet.png"
-            alt="main"
-            class="w-full rounded-b-[3.5rem] hidden max-[1440px]:block max-[768px]:rounded-b-3xl max-[768px]:h-153.5 object-cover"
-          />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-
-      <div
-        class="flex justify-between absolute w-full top-0 z-10 px-15 pt-22.5 max-[1440px]:pt-32.5 max-[768px]:px-5 max-[768px]:pt-30"
+      <h1
+        class="text-white text-[4rem] leading-[100%] mb-8 max-w-220 max-[1440px]:max-w-170 max-[1440px]:text-5xl max-[1024px]:max-w-140 max-[768px]:max-w-full max-[768px]:text-[2rem]"
       >
-        <div>
-          <h1
-            class="text-white font-medium text-[4rem] max-[1440px]:text-5xl leading-[100%] mb-4 max-[768px]:text-2xl"
-          >
-            Август — месяц<br />
-            выгодной доставки
-          </h1>
-          <p class="text-white font-medium text-2xl max-[1440px]:text-sm mb-8">
-            Спецтарифы на междугородние перевозки:<br />
-            Самара, Екатеринбург — дешевле на 20%.
-          </p>
-          <button
-            class="w-76.5 h-19 max-[1440px]:h-13 max-[1024px]:h-19 max-[768px]:h-12 max-[768px]:w-55 max-[1440px]:w-60 max-[1440px]:text-base rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
-          >
-            Начать сотрудничество
-            <img
-              src="./assets/icons/chevron.svg"
-              alt="chevron"
-              class="-rotate-90"
-            />
-          </button>
-        </div>
-      </div>
+        Грузоперевозки фурами 10т по всей России
+      </h1>
+      <button
+        class="w-76.5 h-19 max-[1440px]:h-13 max-[768px]:h-12 max-[768px]:w-55 max-[1440px]:w-60 max-[1440px]:text-base rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+      >
+        Начать сотрудничество
+        <img
+          src="./assets/icons/chevron.svg"
+          alt="chevron"
+          class="-rotate-90"
+        />
+      </button>
+      <img
+        src="./assets/images/cargo.png"
+        alt="news"
+        class="absolute right-0 -top-16 max-[1440px]:-top-46 max-[1440px]:-right-48 max-[1024px]:-top-34 max-[1024px]:-right-55 max-[768px]:w-50 max-[768px]:h-35 max-[768px]:-right-17 max-[768px]:top-33"
+      />
     </div>
     <main
       class="max-w-[1920px] max-[1440px]:max-w-5xl mx-auto max-[1024px]:max-w-3xl max-[768px]:max-w-[360px]"
     >
       <section
-        class="flex gap-10 mb-23 pl-15 max-[1440px]:pl-10 relative max-[1440px]:mb-20 max-[768px]:mb-16 max-[1024px]:pl-5 max-[1024px]:gap-2 max-[768px]:px-4 max-[768px]:flex-col"
+        class="px-15 max-[1440px]:px-10 max-[768px]:px-4 mb-40 max-[1440px]:mb-20 max-[768px]:mb-16"
       >
-        <div class="flex-1">
-          <div
-            class="flex items-center justify-between max-[1440px]:items-start"
-          >
-            <div>
-              <h2
-                class="title max-[1440px]:mt-20 max-[768px]:mt-16 max-[768px]:mb-4"
-              >
-                О компании
-              </h2>
-              <p
-                class="space3 hidden text-xl leading-7 mb-8 max-[768px]:block max-[768px]:text-sm max-[768px]:leading-4.5 max-[768px]:mb-6"
-              >
-                “Грузовые линии” - надежный оператор грузоперевозок,
-                специализирующийся на логистических решениях с 2008 года, и
-                берет на себя весь спектр ваших транспортныз задач
-              </p>
-            </div>
-            <img
-              src="./assets/icons/about_line.svg"
-              alt="about"
-              class="about_line"
-            />
-            <img
-              src="./assets/icons/aboutLineTablet.svg"
-              alt="about"
-              class="hidden max-[1440px]:block max-[768px]:hidden"
-            />
-          </div>
-          <div class="flex gap-3 mb-3 max-[1024px]:gap-2 max-[1024px]:mb-2">
-            <div class="about_company_wrap radius_left">
-              <div class="about_icon_wrap">
-                <img
-                  src="./assets/icons/check.svg"
-                  alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
-                />
-              </div>
-              <p class="about_title">3000+</p>
-              <p class="about_info">Заказов выполняем ежемесячно</p>
-            </div>
-            <div class="about_company_wrap radius_right">
-              <div class="about_icon_wrap">
-                <img
-                  src="./assets/icons/location.svg"
-                  alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
-                />
-              </div>
-              <p class="about_title">1700+</p>
-              <p class="about_info">
-                Городов охватывает наша география перевозок
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-3 max-[1024px]:gap-2">
-            <div class="about_company_wrap radius_left">
-              <div class="about_icon_wrap">
-                <img
-                  src="./assets/icons/rubl.svg"
-                  alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
-                />
-              </div>
-              <p class="about_title">15 млн ₽</p>
-              <p class="about_info">Страховое покрытие ответсвенности</p>
-            </div>
-            <div class="about_company_wrap radius_right">
-              <div class="about_icon_wrap">
-                <img
-                  src="./assets/icons/clock.svg"
-                  alt="check"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
-                />
-              </div>
-              <p class="about_title">17+ лет</p>
-              <p class="about_info">на рынке грузоперевозок</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex-1 relative pt-40 max-[1440px]:pt-20 max-[768px]:pt-3">
-          <p class="font-medium text-2xl mb-6 space3 max-[1440px]:hidden">
-            Логистика для бизнеса
-            <span class="text-[#C83A36] leading-8"
-              >с надежным перевозчиком</span
+        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-6">
+          Наш автопарк
+        </h2>
+        <div
+          class="bg-[#E8EBED] mb-3 py-12 pl-14 pr-46.25 flex items-center justify-between rounded-[56px] max-[1440px]:mb-2 max-[1440px]:rounded-3xl max-[1440px]:py-8 max-[1440px]:px-12 max-[1024px]:rounded-2xl max-[1024px]:py-8 max-[1024px]:px-6 max-[768px]:mb-3 max-[768px]:p-4"
+        >
+          <div>
+            <p
+              class="text-[2rem] space3 font-medium mb-21 text-[#3A3A3A] max-[1440px]:mb-15 max-[1024px]:text-2xl max-[768px]:mb-6"
             >
-          </p>
-          <p
-            class="space3 text-xl leading-7 mb-8 max-w-148 max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:mb-6 max-[768px]:hidden"
-          >
-            “Грузовые линии” - надежный оператор грузоперевозок,
-            специализирующийся на логистических решениях с 2008 года, и берет на
-            себя весь спектр ваших транспортныз задач
-          </p>
-          <button
-            class="w-[18rem] mb-7 max-[768px]:mb-6 h-16 max-[768px]:w-full max-[1440px]:text-base! max-[768px]:text-base! max-[1440px]:h-13 max-[1440px]:w-59.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
-          >
-            Подробнее о компании
+              Фура “Тент” 10 тонн
+            </p>
             <img
-              src="./assets/icons/chevron.svg"
-              alt="chevron"
-              class="-rotate-90"
+              src="./assets/images/tent.png"
+              alt="tent"
+              class="hidden w-74 mb-6 max-[768px]:block"
             />
-          </button>
+            <div
+              class="max-w-150 w-150 mb-21 max-[1440px]:w-92.75 max-[1440px]:mb-15 max-[768px]:mb-10 max-[768px]:w-full"
+            >
+              <div
+                class="flex justify-between pb-1 border-b-[0.5px] mb-4 border-b-[#3A3A3A] border-dashed max-[768px]:mb-6"
+              >
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">
+                  Длина:
+                </p>
+
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">
+                  13.6 м
+                </p>
+              </div>
+              <div
+                class="flex justify-between pb-1 border-b-[0.5px] mb-4 border-b-[#3A3A3A] border-dashed max-[768px]:mb-6"
+              >
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">
+                  Объем:
+                </p>
+
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">
+                  86-92 м3
+                </p>
+              </div>
+              <div
+                class="flex justify-between pb-1 border-b-[0.5px] border-b-[#3A3A3A] border-dashed"
+              >
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">
+                  Грузоподъемность:
+                </p>
+
+                <p class="text-[#3A3A3A] text-xl max-[768px]:text-base">10 т</p>
+              </div>
+            </div>
+
+            <div
+              class="gap-4 flex items-end max-[768px]:gap-5 max-[768px]:flex-col-reverse max-[768px]:items-start"
+            >
+              <button
+                class="p-6 text-white text-xl gap-2.5 flex items-center justify-center rounded-xl bg-[#C83A36] max-[1440px]:text-base! max-[1440px]:p-4 max-[768px]:text-sm! max-[768px]:w-full"
+              >
+                Рассчитать стоимость
+                <img
+                  src="./assets/icons/chevron.svg"
+                  alt="chevron"
+                  class="-rotate-90"
+                />
+              </button>
+              <p class="text-xl text-[#3A3A3A] max-[1440px]:text-sm">
+                Цена от
+                <span
+                  class="space3 font-medium text-[3.5rem] ml-2 max-[1440px]:text-4xl"
+                >
+                  1920₽</span
+                >
+              </p>
+            </div>
+          </div>
           <img
-            src="./assets/images/about_company.png"
-            alt="about"
-            class="object-cover w-236 h-181 max-[1920px]:w-210 max-[1920px]:h-160 max-[1440px]:h-110 max-[768ox]:w-82 max-[768px]:h-82 max-[768px]:rounded-3xl! max-[768px]:mt-0 max-[1440px]:mt-20 rounded-l-4xl max-[1024px]:mt-17 max-[1024px]:rounded-l-3xl max-[1024px]:h-102.5"
+            src="./assets/images/tent.png"
+            alt="tent"
+            class="max-[1440px]:w-105 max-[1024px]:w-53 max-[1024px]:mb-3 max-[768px]:hidden"
           />
         </div>
-      </section>
-      <section
-        class="rounded-[56px] max-[1024px]:rounded-3xl max-[768px]:rounded-xl p-15 pb-18 bg-[#E4E6E8] z-100 -mb-15 relative max-[1440px]:p-10 max-[768px]:px-4"
-      >
-        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-8">Услуги</h2>
-
-        <div class="flex flex-wrap gap-3">
+        <div class="flex gap-3 overflow-auto max-[1440px]:gap-2">
           <div
-            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white h-125 max-[1440px]:h-80 max-[768px]:h-60 radius_left relative overflow-hidden flex justify-between"
+            class="bg-[#E8EBED] radius_left py-8 max-[1440px]:py-6 max-[1024px]:py-4 shrink-0 w-[350px] max-[1440px]:w-[186px] max-[768px]:w-[140px] flex flex-col items-center gap-16.5 max-[1440px]:gap-7 max-[1024px]:gap-5"
           >
-            <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:hidden"
-            >
-              Перевозка <br />
-              еврофурами
-            </p>
-            <p
-              class="text-lg text-[#3A3A3A] font-medium hidden max-[768px]:block"
-            >
-              Перевозка еврофурами
-            </p>
-            <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
             <img
-              src="./assets/images/service1.png"
-              alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[768px]:w-47 max-[768px]:h-47 max-[1440px]:w-70 max-[1440px]:h-60 max-[1440px]:-right-15 max-[1024px]:-right-5 max-[1024px]:h-65"
+              src="./assets/images/tent2.png"
+              alt="tent"
+              class="max-[1440px]:w-34.5 max-[1024px]:w-28.25"
             />
+            <p
+              class="text-[#3A3A3A] text-[1.75rem] space3 font-medium max-[1440px]:text-base max-[1024px]:text-xs"
+            >
+              Фура “Тент” 10 тонн
+            </p>
           </div>
-
           <div
-            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white h-125 max-[768px]:h-60 max-[1440px]:h-80 overflow-hidden radius_full radius_servie2 relative flex justify-between"
+            class="bg-[#F2F5F7] radius_full py-8 max-[1440px]:py-6 max-[1024px]:py-4 shrink-0 w-[350px] max-[1440px]:w-[186px] max-[768px]:w-[140px] flex flex-col items-center gap-16.5 max-[1440px]:gap-7 max-[1024px]:gap-5"
           >
-            <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
-            >
-              Городские / пригородные перевозки
-            </p>
-            <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
             <img
-              src="./assets/images/service2.png"
-              alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[768px]:w-47 max-[768px]:h-47 max-[768px]:right-0 max-[1440px]:w-70 max-[1440px]:h-60 max-[1024px]:right-8"
+              src="./assets/images/ref.png"
+              alt="ref"
+              class="max-[1440px]:w-34.5 max-[1024px]:w-28.25"
             />
+            <p
+              class="text-[#3A3A3A99] text-[1.75rem] space3 font-medium max-[1440px]:text-base max-[1024px]:text-xs"
+            >
+              Фура “Реф” 10 тонн
+            </p>
           </div>
-
           <div
-            class="flex-1 basis-[calc(33.333%-0.5rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white radius_right max-[768px]:h-60 radius_servie3 h-125 max-[1440px]:h-80 overflow-hidden relative flex justify-between"
+            class="bg-[#F2F5F7] radius_full py-8 max-[1440px]:py-6 max-[1024px]:py-4 shrink-0 w-[350px] max-[1440px]:w-[186px] max-[768px]:w-[140px] flex flex-col items-center gap-16.5 max-[1440px]:gap-7 max-[1024px]:gap-5"
           >
-            <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
-            >
-              Доставка выделенным транспортом в РЦ
-            </p>
-            <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
             <img
-              src="./assets/images/service3.png"
-              alt="service1"
-              class="absolute bottom-0 right-0 w-120 h-100 max-[1440px]:w-70 max-[768px]:w-45 max-[768px]:h-45 max-[768px]:right-0 max-[1440px]:h-60 max-[1024px]:right-11 max-[1024px]:bottom-2 max-[1024px]:w-60 max-[1024px]:h-50"
+              src="./assets/images/termos.png"
+              alt="ref"
+              class="max-[1440px]:w-34.5 max-[1024px]:w-28.25"
             />
+            <p
+              class="text-[#3A3A3A99] text-[1.75rem] space3 font-medium max-[1440px]:text-base max-[1024px]:text-xs"
+            >
+              Фура “Термос” 10 тонн
+            </p>
           </div>
-
           <div
-            class="flex-1 basis-[calc(50%-0.375rem)] max-[1024px]:basis-[calc(50%-0.375rem)] min-w-[300px] p-8 bg-white radius_left max-[768px]:h-60 radius_servie2 overflow-hidden h-125 max-[1440px]:h-80 relative flex justify-between"
+            class="bg-[#F2F5F7] radius_full py-8 max-[1440px]:py-6 max-[1024px]:py-4 shrink-0 w-[350px] max-[1440px]:w-[186px] max-[768px]:w-[140px] flex flex-col items-center gap-16.5 max-[1440px]:gap-7 max-[1024px]:gap-5"
           >
-            <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
-            >
-              Доставка малотоннажным транспортом
-            </p>
-            <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
             <img
-              src="./assets/images/service4.png"
-              alt="service1"
-              class="absolute bottom-0 right-0 w-185 h-120 object-cover max-[768px]:w-[95%] max-[768px]:bottom-2 max-[768px]:h-40 max-[768px]:right-0 max-[1440px]:w-110 max-[1440px]:h-70 max-[1024px]:-right-10 max-[1024px]:h-50 max-[1024px]:bottom-5"
+              src="./assets/images/ref.png"
+              alt="ref"
+              class="max-[1440px]:w-34.5 max-[1024px]:w-28.25"
             />
+            <p
+              class="text-[#3A3A3A99] text-[1.75rem] space3 font-medium max-[1440px]:text-base max-[1024px]:text-xs"
+            >
+              Фура “Термос” 10 тонн
+            </p>
           </div>
-
           <div
-            class="flex-1 basis-[calc(50%-0.375rem)] max-[1024px]:basis-full min-w-[300px] p-8 bg-white h-125 max-[768px]:h-60 max-[1440px]:h-80 radius_right radius_servie5 relative flex justify-between"
+            class="bg-[#F2F5F7] radius_right py-8 max-[1440px]:py-6 max-[1024px]:py-4 shrink-0 w-[350px] max-[1440px]:w-[186px] max-[768px]:w-[140px] flex flex-col items-center gap-16.5 max-[1440px]:gap-7 max-[1024px]:gap-5"
           >
+            <img
+              src="./assets/images/bort.png"
+              alt="bort"
+              class="max-[1440px]:w-34.5 max-[1024px]:w-28.25"
+            />
             <p
-              class="text-[2rem] text-[#3A3A3A] font-medium max-[1440px]:text-2xl max-[1440px]:leading-7 max-[768px]:text-lg max-[768px]:leading-6"
+              class="text-[#3A3A3A99] text-[1.75rem] space3 font-medium max-[1440px]:text-base max-[1024px]:text-xs"
             >
-              Перевозка догрузом
+              Фура “Борт” 10 тонн
             </p>
-            <img src="./assets/icons/arrowUp.svg" alt="arrow" class="w-8 h-8" />
-            <img
-              src="./assets/images/service5.png"
-              alt="service1"
-              class="absolute bottom-0 right-0 w-195 h-130 object-cover max-[1440px]:w-90 max-[1440px]:h-70 max-[1024px]:hidden"
-            />
-            <img
-              src="./assets/images/service5.png"
-              alt="service1"
-              class="absolute bottom-0 min-[768px]:left-11 w-135 h-70 object-cover hidden max-[1024px]:block max-[768px]:w-75 max-[768px]:h-50 max-[768px]:right-0!"
-            />
           </div>
         </div>
       </section>
       <section
-        class="px-15 p-40 pt-42.5 max-[768px]:mb-10 max-[1440px]:px-10 max-[768px]:pb-4 max-[768px]:rounded-xl max-[768px]:px-4 max-[768px]:pt-27 max-[1440px]:pt-22 max-[1440px]:pb-12 bg-[#3A3A3A] -z-10 rounded-b-4xl max-[1024px]:rounded-3xl mb-45 max-[1440px]:mb-20"
+        class="px-15 max-[1440px]:px-10 max-[768px]:px-4 mb-40 max-[1440px]:mb-20 max-[768px]:mb-16"
       >
-        <h2 class="title text-white! mb-14 max-[1440px]:mb-10 max-[768px]:mb-8">
-          Преимущества
+        <div class="flex mb-15.5 max-[768px]:flex-col max-[1440px]:mb-6">
+          <div class="flex-1 max-[768px]:mb-4">
+            <h2
+              class="title max-w-172 max-[1440px]:max-w-md max-[1024px]:max-w-62 max-[768px]:w-full"
+            >
+              Особенности грузоперевозок 10 тонн
+            </h2>
+          </div>
+          <div class="flex-1">
+            <p
+              class="text-[#3A3A3A] mb-8 space3 text-xl max-w-140 max-[1440px]:text-sm max-[1440px]:max-w-79 max-[1024px]:w-full max-[1024px]:mb-6"
+            >
+              Перевозки грузов до 10 тонн — оптимальный выбор для доставки
+              крупной партии товара на средние и дальние расстояния.
+              Используются тентованные, бортовые или изотермические машины в
+              зависимости от типа груза. Возможна боковая и верхняя загрузка.
+            </p>
+            <button
+              class="text-white p-4.5 flex items-center max-[1440px]:p-4 max-[768px]:w-full justify-center gap-2 text-xl bg-[#C83A36] font-medium rounded-xl max-[1024px]:text-base!"
+            >
+              Подробнее о компании
+              <img
+                src="./assets/icons/chevron.svg"
+                alt="chevron"
+                class="-rotate-90"
+              />
+            </button>
+          </div>
+        </div>
+        <img
+          src="./assets/images/cargo_main.png"
+          alt="news"
+          class="w-full max-[1024px]:hidden"
+        />
+        <img
+          src="./assets/images/cargo_main_tablet.png"
+          alt="news"
+          class="w-full max-[1024px]:block hidden max-[768px]:hidden"
+        />
+        <img
+          src="./assets/images/cargo_main_mobile.png"
+          alt="news"
+          class="w-full max-[768px]:block hidden"
+        />
+      </section>
+      <section
+        class="rounded-[56px] relative z-10 bg-[#E4E6E8] max-[768px]:mb-16 max-[768px]:px-4 max-[1024px]:rounded-3xl p-15 max-[1440px]:p-10"
+      >
+        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-6">
+          Преимущества перевозок грузовыми автомобилями
         </h2>
         <div class="flex gap-3 mb-3 max-[768px]:flex-col">
-          <div
-            class="flex-1 shrink-0 p-12 max-[1440px]:p-6 max-[1024px]:p-3 bg-[#FFFFFF1A] radius_left"
-          >
-            <div class="flex justify-between mb-8">
+          <div class="bg-white flex-1 radius_left p-12 max-[1440px]:p-6">
+            <div class="flex mb-8 justify-between max-[768px]:mb-6">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+                class="text-[2rem] spce3 font-medium text-[#3A3A3A] max-[1440px]:text-2xl max-[1024px]:text-lg"
               >
-                Безопасность
+                Гарантия сохранности груза
               </p>
               <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+                class="w-18 h-18 rounded-full shrink-0 flex items-center justify-center bg-[#C83A36] max-[1440px]:w-12 max-[1440px]:h-12"
               >
                 <img
                   src="./assets/icons/secure.svg"
-                  alt="secure"
                   class="max-[1440px]:w-6 max-[1440px]:h-6"
                 />
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+              class="spaec3 text-xl text-[#3A3A3A] max-[1440px]:text-sm max-[1024px]:text-xs"
             >
-              Страхование на 15 млн и официальная ответственность
+              Системы крепления надёжно фиксируют товары в кузове, исключая риск
+              повреждений во время транспортировки.
             </p>
           </div>
-          <div
-            class="flex-1 shrink-0 p-12 max-[1440px]:p-6 max-[1024px]:p-3 bg-[#FFFFFF1A] radius_full"
-          >
-            <div class="flex justify-between mb-8 gap-3">
+          <div class="bg-white flex-1 radius_left p-12 max-[1440px]:p-6">
+            <div class="flex mb-8 justify-between max-[768px]:mb-6">
               <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+                class="text-[2rem] spce3 font-medium text-[#3A3A3A] max-[1440px]:text-2xl max-[1024px]:text-lg"
               >
-                Современный автопарк
+                Быстрая доставка в короткие сроки
               </p>
               <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+                class="w-18 h-18 rounded-full shrink-0 flex items-center justify-center bg-[#C83A36] max-[1440px]:w-12 max-[1440px]:h-12"
               >
                 <img
                   src="./assets/icons/auto.svg"
-                  alt="auto"
                   class="max-[1440px]:w-6 max-[1440px]:h-6"
                 />
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+              class="spaec3 text-xl text-[#3A3A3A] max-[1440px]:text-sm max-[1024px]:text-xs"
             >
-              Только новые европейские машины
-            </p>
-          </div>
-          <div
-            class="flex-1 shrink-0 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_right"
-          >
-            <div class="flex justify-between mb-8">
-              <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
-              >
-                Прозрачные цены
-              </p>
-              <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
-              >
-                <img
-                  src="./assets/icons/rubl2.svg"
-                  alt="rubl"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
-                />
-              </div>
-            </div>
-            <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
-            >
-              Персональные условия для оптимизации ваших затрат с фиксацией
-              тарифа в договоре
+              Фуры не зависят от расписания, как ЖД составы, или погодных
+              условий, как авиатранспорт, что позволяет оперативно перевозить
+              грузы в любое время суток.
             </p>
           </div>
         </div>
         <div class="flex gap-3 max-[768px]:flex-col">
-          <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_left"
-          >
-            <div class="flex justify-between mb-8">
+          <div class="bg-white flex-1 radius_left p-12 max-[1440px]:p-6">
+            <div class="flex mb-8 justify-between max-[768px]:mb-6">
               <p
-                class="text-white space3 max-[1024px]:break-all max-[768px]:break-normal font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+                class="text-[2rem] spce3 font-medium text-[#3A3A3A] max-[1440px]:text-2xl max-[1024px]:text-lg"
               >
-                Отлаженный документооборот
+                Страхование и юридическое сопровождение
               </p>
               <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+                class="w-18 h-18 rounded-full shrink-0 flex items-center justify-center bg-[#C83A36] max-[1440px]:w-12 max-[1440px]:h-12"
               >
                 <img
                   src="./assets/icons/documents.svg"
-                  alt="documents"
                   class="max-[1440px]:w-6 max-[1440px]:h-6"
                 />
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+              class="spaec3 text-xl text-[#3A3A3A] max-[1440px]:text-sm max-[1024px]:text-xs"
             >
-              Тщательная проверка накладных и возврат оригиналов за 14 дней
+              Возможно дополнительное страхования каждой партии груза. Перевозки
+              фурами осуществляются в строгом соответствии с правовым
+              регламентом, что гарантирует безопасность грузов и минимизирует
+              юридические риски для клиента.
             </p>
           </div>
-          <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] radius_full max-[1440px]:p-6 max-[1024px]:p-3"
-          >
-            <div class="flex justify-between mb-8 gap-3">
+          <div class="bg-white flex-1 radius_left p-12 max-[1440px]:p-6">
+            <div class="flex mb-8 justify-between max-[768px]:mb-6">
               <p
-                class="text-white space3 max-[1024px]:break-all font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
+                class="text-[2rem] spce3 font-medium text-[#3A3A3A] max-[1440px]:text-2xl max-[1024px]:text-lg"
               >
-                Команда профессионалов
+                Обеспечение всех необходимых условий
               </p>
               <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
+                class="w-18 h-18 rounded-full shrink-0 flex items-center justify-center bg-[#C83A36] max-[1440px]:w-12 max-[1440px]:h-12"
               >
                 <img
                   src="./assets/icons/team.svg"
-                  alt="team"
                   class="max-[1440px]:w-6 max-[1440px]:h-6"
                 />
               </div>
             </div>
             <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
+              class="spaec3 text-xl text-[#3A3A3A] max-[1440px]:text-sm max-[1024px]:text-xs"
             >
-              Личный менеджер, логист, специалист по документообороту
-            </p>
-          </div>
-          <div
-            class="flex-1 p-12 bg-[#FFFFFF1A] max-[1440px]:p-6 max-[1024px]:p-3 radius_right"
-          >
-            <div class="flex justify-between mb-8">
-              <p
-                class="text-white space3 font-medium text-[2rem] leading-10 max-[1440px]:text-xl max-[1440px]:leading-7 max-[1024px]:text-lg max-[1024px]:leading-6"
-              >
-                Контроль на всех этапах
-              </p>
-              <div
-                class="about_icon_wrap mb-0! max-[768px]:w-10! max-[768px]:h-10!"
-              >
-                <img
-                  src="./assets/icons/control.svg"
-                  alt="control"
-                  class="max-[1440px]:w-6 max-[1440px]:h-6"
-                />
-              </div>
-            </div>
-            <p
-              class="text-lg leading-7 space3 text-white max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:text-xs max-[1024px]:leading-4"
-            >
-              С фото и видео-фиксацией на погрузке и выгрузке, отслеживание
-              груза
+              Рефрижераторные фуры оснащены холодильными установками, которые
+              поддерживают заданную температуру на протяжении всего рейса. Это
+              важно при транспортировке скоропортящихся продуктов или
+              температурочувствительных грузов.
             </p>
           </div>
         </div>
       </section>
       <section
-        class="px-15 mb-46 max-[1440px]:mb-20 max-[1440px]:p-10 max-[768px]:px-4 max-[768px]:mb-6"
+        class="px-15 mb-46 rounded-b-[56px] pt-19 -mt-13 max-[1440px]:rounded-b-[28px] max-[1024px]:rounded-b-3xl max-[768px]:rounded-b-xl max-[1440px]:mb-20 max-[1440px]:p-10 max-[768px]:px-4 max-[768px]:mb-6 bg-[#3A3A3A] pb-14 max-[1440px]:pb-10 max-[768px]:pb-5"
       >
-        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-8:">
+        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-8 text-white!">
           Как мы работаем
         </h2>
         <div class="flex gap-3 max-[768px]:flex-col">
@@ -712,6 +561,102 @@
               подписанные оригиналы в течение 14 дней
             </p>
           </div>
+        </div>
+      </section>
+      <section
+        class="mb-40 max-[1440px]:mb-20 max-[768px]:mb-16 px-15 max-[1440px]:pl-5 max-[1440px]:pr-0 max-[768px]:px-4"
+      >
+        <h2 class="title mb-14 max-[1440px]:mb-10 max-[768px]:mb-8">
+          Цены на грузоперевозки
+        </h2>
+        <div class="flex gap-4 mb-16 overflow-auto max-[768px]:mb-10">
+          <button
+            class="py-4 shrink-0 px-6 bg-[#3A3A3A] flex items-center rounded-2xl text-white text-2xl max-[1024px]:text-xl max-[1024px]:py-3 max-[1024px]:px-4"
+          >
+            По Новосибирску
+          </button>
+
+          <button
+            class="py-4 shrink-0 px-6 bg-[#F2F5F7] flex items-center rounded-2xl text-[#3A3A3A] text-2xl max-[1024px]:text-xl max-[1024px]:py-3 max-[1024px]:px-4"
+          >
+            По всей России
+          </button>
+        </div>
+        <div class="overflow-x-auto w-full">
+          <table>
+            <thead>
+              <tr>
+                <th>Тип кузова</th>
+                <th>Грузоподъемность</th>
+                <th>Объем/длина кузова</th>
+                <th>Стоимость, рублей без НДС</th>
+                <th class="no_border_right">Мин. время оплаты ТС, час</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="section-title">Фургон</td>
+                <td>1-2 т</td>
+                <td>35-60 куб.м</td>
+                <td>2400 руб/час</td>
+                <td class="no_border_right">4ч</td>
+              </tr>
+              <tr>
+                <td class="section-title">Термос</td>
+                <td>1-2 т</td>
+                <td>40-50 куб.м</td>
+                <td>_ руб/час</td>
+                <td class="no_border_right">4ч</td>
+              </tr>
+              <tr>
+                <td class="section-title">Рефрижератор</td>
+                <td>1,5 т</td>
+                <td>40-50 куб.м</td>
+                <td>_ руб/час</td>
+                <td class="no_border_right">6ч</td>
+              </tr>
+
+              <tr>
+                <td class="section-title">Борт</td>
+                <td>5 т</td>
+                <td>6-9м</td>
+                <td>2700 руб/час</td>
+                <td class="no_border_right">4ч</td>
+              </tr>
+
+              <tr>
+                <td class="section-title text-start! pl-10!" colspan="4">
+                  Отдаленные районы
+                </td>
+                <td class="section-title text-center! no_border_right">
+                  Доплата
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4" class="text-start! pl-10!">
+                  п. Краснообск, Ключ-Камышенское плато
+                </td>
+                <td class="no_border_right">0,5 ч</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="text-start! pl-10!">
+                  Первомайский район, Советский район (Шлюз, ОбъГЭС,
+                  Академгородок, Нижняя Ельцовка), Кольцово, Барышево, Обь,
+                  Толмачево, Криводановка, Кудряши, ст. Мочище, п. Мочище,
+                  Пашино, ул. Кубовая, Бердск, Плотниково, Огурцово, Верх-Тула,
+                  Матвеевка, Марусино, Сокур,  с.Новолуговое
+                </td>
+                <td class="no_border_right">1 ч</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="text-start! pl-10! no_border_bottom">
+                  Искитим, Колывань, Мошково, Коченево, Крахаль, Шелковичиха,
+                  свыше 50 км
+                </td>
+                <td class="no_border_bottom no_border_right">2 ч</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
       <section
@@ -1448,6 +1393,5 @@
       </div>
     </footer>
   </body>
-  <script src="main.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </html>
