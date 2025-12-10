@@ -239,6 +239,8 @@ button {
   background-size: 100% auto;
   background-position: top right;
   background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1;
   @media (max-width: 1440px) {
     width: 180%;
     height: 180%;
@@ -257,6 +259,11 @@ button {
     transform: rotate(30deg);
     transform-origin: center center;
   }
+}
+
+.footer_section > div {
+  position: relative;
+  z-index: 2;
 }
 
 .footer_icon_wrap {
@@ -387,6 +394,8 @@ button {
     background-size: 100% auto;
     background-position: top right;
     background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1;
     transform: rotate(0deg);
     transform-origin: center center;
   }
