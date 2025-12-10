@@ -32,6 +32,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "TTFirstNeue", sans-serif;
 }
@@ -52,7 +56,7 @@ body {
     object-fit: cover;
     display: block;
   }
-  
+
   .about-image {
     width: 100%;
     max-width: none;
@@ -71,7 +75,7 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   button {
     font-size: 500;
   }
@@ -143,7 +147,7 @@ button {
     width: 3rem;
     height: 3rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 0.5rem !important;
     width: 1.5rem;
     height: 1.5rem;
@@ -165,7 +169,7 @@ button {
     font-size: 3rem;
     margin-bottom: 0.5rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 1.5rem !important;
     margin-bottom: 0.75rem;
   }
@@ -456,8 +460,8 @@ button {
   color: inherit;
 }
 .service-card-arrow {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(69%)
-    saturate(3612%) hue-rotate(343deg) brightness(93%) contrast(93%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(3612%)
+    hue-rotate(343deg) brightness(93%) contrast(93%);
 }
 .service-card:hover .service-card-arrow {
   transform: translateY(-2px);
@@ -521,4 +525,25 @@ button {
   left: 50%;
   transform: translateX(-50%);
   gap: 8px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: all 0.3s ease-out;
+}
+
+.accordion-icon {
+  transition: all 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  margin-top: 1rem;
 }

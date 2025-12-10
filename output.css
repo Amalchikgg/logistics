@@ -33,8 +33,6 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -202,6 +200,9 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -380,6 +381,9 @@
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
+  .h-74 {
+    height: calc(var(--spacing) * 74);
+  }
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
@@ -392,8 +396,8 @@
   .h-130 {
     height: calc(var(--spacing) * 130);
   }
-  .h-181 {
-    height: calc(var(--spacing) * 181);
+  .h-185 {
+    height: calc(var(--spacing) * 185);
   }
   .max-h-\[950px\] {
     max-height: 950px;
@@ -418,6 +422,9 @@
   }
   .w-41\.5 {
     width: calc(var(--spacing) * 41.5);
+  }
+  .w-42 {
+    width: calc(var(--spacing) * 42);
   }
   .w-44\.5 {
     width: calc(var(--spacing) * 44.5);
@@ -448,9 +455,6 @@
   }
   .w-195 {
     width: calc(var(--spacing) * 195);
-  }
-  .w-236 {
-    width: calc(var(--spacing) * 236);
   }
   .w-\[18rem\] {
     width: 18rem;
@@ -523,6 +527,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -874,13 +881,12 @@
   .text-white\! {
     color: var(--color-white) !important;
   }
-  .filter {
+  .blur {
+    --tw-blur: blur(8px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .max-\[768ox\]\:w-82 {
-    @media (width < 768ox) {
-      width: calc(var(--spacing) * 82);
-    }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .max-\[1920px\]\:h-160 {
     @media (width < 1920px) {
@@ -935,6 +941,11 @@
   .max-\[1440px\]\:-mt-23 {
     @media (width < 1440px) {
       margin-top: calc(var(--spacing) * -23);
+    }
+  }
+  .max-\[1440px\]\:mt-11 {
+    @media (width < 1440px) {
+      margin-top: calc(var(--spacing) * 11);
     }
   }
   .max-\[1440px\]\:mt-20 {
@@ -1045,11 +1056,6 @@
   .max-\[1440px\]\:h-90 {
     @media (width < 1440px) {
       height: calc(var(--spacing) * 90);
-    }
-  }
-  .max-\[1440px\]\:h-110 {
-    @media (width < 1440px) {
-      height: calc(var(--spacing) * 110);
     }
   }
   .max-\[1440px\]\:max-h-\[850px\] {
@@ -1245,6 +1251,11 @@
   .max-\[1440px\]\:gap-3 {
     @media (width < 1440px) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .max-\[1440px\]\:gap-5 {
+    @media (width < 1440px) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .max-\[1440px\]\:gap-7 {
@@ -1455,6 +1466,16 @@
       line-height: calc(var(--spacing) * 7);
     }
   }
+  .max-\[1439px\]\:h-110 {
+    @media (width < 1439px) {
+      height: calc(var(--spacing) * 110);
+    }
+  }
+  .max-\[1439px\]\:w-125\.5 {
+    @media (width < 1439px) {
+      width: calc(var(--spacing) * 125.5);
+    }
+  }
   .max-\[1024px\]\:-top-34 {
     @media (width < 1024px) {
       top: calc(var(--spacing) * -34);
@@ -1623,6 +1644,11 @@
   .max-\[1024px\]\:w-60 {
     @media (width < 1024px) {
       width: calc(var(--spacing) * 60);
+    }
+  }
+  .max-\[1024px\]\:w-81 {
+    @media (width < 1024px) {
+      width: calc(var(--spacing) * 81);
     }
   }
   .max-\[1024px\]\:w-88 {
@@ -2162,6 +2188,11 @@
       width: calc(var(--spacing) * 75);
     }
   }
+  .max-\[768px\]\:w-82 {
+    @media (width < 768px) {
+      width: calc(var(--spacing) * 82);
+    }
+  }
   .max-\[768px\]\:w-\[95\%\] {
     @media (width < 768px) {
       width: 95%;
@@ -2439,6 +2470,16 @@
       flex: 1;
     }
   }
+  .min-\[1919px\]\:max-w-\[200px\] {
+    @media (width >= 1919px) {
+      max-width: 200px;
+    }
+  }
+  .min-\[1919px\]\:whitespace-nowrap {
+    @media (width >= 1919px) {
+      white-space: nowrap;
+    }
+  }
 }
 @font-face {
   font-family: "TTFirstNeue";
@@ -2470,8 +2511,33 @@
   font-weight: 300;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "TTFirstNeue", sans-serif;
+}
+@media (min-width: 1921px) {
+  .page-container {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .news-card {
+    flex: 1 1 0%;
+  }
+  .news-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .about-image {
+    width: 100%;
+    max-width: none;
+    height: 690px;
+    object-fit: cover;
+    display: block;
+  }
 }
 @media (max-width: 1920px) and (min-width: 1440px) {
   html {
@@ -2481,7 +2547,7 @@ body {
     height: 28.2rem;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   button {
     font-size: 500;
   }
@@ -2545,7 +2611,7 @@ button {
     width: 3rem;
     height: 3rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 0.5rem !important;
     width: 1.5rem;
     height: 1.5rem;
@@ -2566,7 +2632,7 @@ button {
     font-size: 3rem;
     margin-bottom: 0.5rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 1.5rem !important;
     margin-bottom: 0.75rem;
   }
@@ -2827,6 +2893,17 @@ button {
 .menu-arrow {
   font-size: 14px;
 }
+.service-card {
+  text-decoration: none;
+  color: inherit;
+}
+.service-card-arrow {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(3612%) hue-rotate(343deg) brightness(93%) contrast(93%);
+}
+.service-card:hover .service-card-arrow {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
 .no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -2877,6 +2954,23 @@ button {
   left: 50%;
   transform: translateX(-50%);
   gap: 8px;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: all 0.3s ease-out;
+}
+.accordion-icon {
+  transition: all 0.3s ease-out;
+}
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
+}
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  margin-top: 1rem;
 }
 @property --tw-rotate-x {
   syntax: "*";
