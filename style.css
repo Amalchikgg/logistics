@@ -36,6 +36,32 @@ body {
   font-family: "TTFirstNeue", sans-serif;
 }
 
+@media (min-width: 1921px) {
+  .page-container {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .news-card {
+    flex: 1 1 0%;
+  }
+
+  .news-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: none;
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 @media (max-width: 1920px) and (min-width: 1440px) {
   html {
     font-size: 14px;
