@@ -556,3 +556,24 @@ button {
   max-height: 500px;
   margin-top: 1rem;
 }
+
+.truck-card {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.truck-card.active {
+  background: #e8ebed !important;
+}
+
+.truck-card:not(.active) {
+  background: #f2f5f7 !important;
+}
+
+.truck-card.active p {
+  color: #3a3a3a !important;
+}
+
+.truck-card:not(.active) p {
+  color: #3a3a3a99 !important;
+}

@@ -136,9 +136,34 @@ phoneInput.addEventListener("keydown", function (e) {
 });
 
 // Кнопка наверх
-document.getElementById("arrowUp").addEventListener("click", () => {
+document.getElementById("arrowUp")?.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
+  });
+});
+
+//cards
+const cards = document.querySelectorAll(".truck-card");
+
+const bigTitle = document.querySelector("#big-title");
+const lenText = document.querySelector("#len");
+const volText = document.querySelector("#vol");
+const weightText = document.querySelector("#weight");
+const priceText = document.querySelector("#price");
+const bigImgDesktop = document.querySelector("#big-img-desktop");
+const bigImgMobile = document.querySelector("#big-img-mobile");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
+    bigTitle.textContent = card.dataset.title;
+    bigImgDesktop.src = card.dataset.img;
+    bigImgMobile.src = card.dataset.img;
+    lenText.textContent = card.dataset.length;
+    volText.textContent = card.dataset.volume;
+    weightText.textContent = card.dataset.weight;
+    priceText.textContent = card.dataset.price + "₽";
   });
 });
