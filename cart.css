@@ -1,0 +1,72 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Стилизация регионов --- */
+
+/* Все регионы по умолчанию */
+.map-region {
+  fill: #e4e6e8; /* Цвет из вашего кода */
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+/* Класс для активного региона (добавляется через JS или Бэк) */
+.map-region.is-active {
+  fill: #333333 !important; /* Темно-серый как на макете */
+  opacity: 1 !important;
+}
+
+/* --- Стилизация маршрута и меток --- */
+
+/* Линия маршрута */
+.route-line {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2;
+  stroke-dasharray: 6 4; /* Пунктир */
+  stroke-linecap: round;
+  pointer-events: none; /* Чтобы не мешала кликам */
+  animation: dash 30s linear infinite; /* Анимация движения (опционально) */
+}
+
+/* Метка города (Пин) */
+.city-marker {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.city-marker:hover {
+  transform: scale(1.2);
+}
+.pin-body {
+  fill: #e63946; /* Красный цвет */
+}
+.pin-center {
+  fill: #333;
+}
+
+/* Текст названия города */
+.city-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #e63946;
+  text-anchor: middle; /* Выравнивание по центру */
+  transform: translateY(-45px); /* Поднять над пином */
+  background-color: white; /* SVG не поддерживает bg, это имитация */
+  text-shadow: 0px 0px 5px white; /* Белая обводка текста для читаемости */
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}

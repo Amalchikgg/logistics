@@ -6,27 +6,24 @@ const closeMenuBtn = document.getElementById("closeMenuBtn");
 burgerBtn.addEventListener("click", (e) => {
   menu.classList.add("active");
   burgerBtn.classList.add("active");
-  document.body.classList.add("no-scroll"); // блокируем скролл страницы
+  document.body.classList.add("no-scroll");
   e.stopPropagation();
 });
 
-// Закрытие меню
 function closeMenu() {
   menu.classList.remove("active");
   burgerBtn.classList.remove("active");
-  document.body.classList.remove("no-scroll"); // возвращаем скролл
+  document.body.classList.remove("no-scroll");
 }
 
 closeMenuBtn.addEventListener("click", closeMenu);
 
-// Клик вне меню — закрываем
 document.addEventListener("click", (e) => {
   if (!menu.contains(e.target) && menu.classList.contains("active")) {
     closeMenu();
   }
 });
 
-// Клик по самому меню — не закрываем
 menu.addEventListener("click", (e) => e.stopPropagation());
 
 //Slider
@@ -62,7 +59,6 @@ headers.forEach((header) => {
 
     const item = this.parentElement;
 
-    // Просто переключаем текущий элемент
     item.classList.toggle("active");
   });
 });
@@ -71,28 +67,22 @@ headers.forEach((header) => {
 const nameInput = document.getElementById("nameInput");
 const phoneInput = document.getElementById("phoneInput");
 
-// Валидация имени - только буквы и пробелы
-nameInput.addEventListener("input", function (e) {
+nameInput?.addEventListener("input", function (e) {
   let value = e.target.value;
-  // Оставляем только буквы (латиница и кириллица) и пробелы
   e.target.value = value.replace(/[^a-zA-Zа-яА-ЯёЁ\s]/g, "");
 });
 
-// Маска для российского номера телефона
-phoneInput.addEventListener("input", function (e) {
+phoneInput?.addEventListener("input", function (e) {
   let value = e.target.value.replace(/\D/g, "");
 
-  // Если первая цифра не 7, добавляем 7
   if (value.length > 0 && value[0] !== "7") {
     value = "7" + value;
   }
 
-  // Ограничиваем длину (7 + 10 цифр)
   if (value.length > 11) {
     value = value.slice(0, 11);
   }
 
-  // Форматируем номер
   let formatted = "+7";
 
   if (value.length > 1) {
@@ -111,21 +101,19 @@ phoneInput.addEventListener("input", function (e) {
   e.target.value = formatted;
 });
 
-// Устанавливаем начальное значение для телефона
-phoneInput.addEventListener("focus", function (e) {
+phoneInput?.addEventListener("focus", function (e) {
   if (e.target.value === "") {
     e.target.value = "+7 (";
   }
 });
 
-phoneInput.addEventListener("blur", function (e) {
+phoneInput?.addEventListener("blur", function (e) {
   if (e.target.value === "+7 (" || e.target.value === "+7") {
     e.target.value = "";
   }
 });
 
-// Обработка нажатия Backspace
-phoneInput.addEventListener("keydown", function (e) {
+phoneInput?.addEventListener("keydown", function (e) {
   if (e.key === "Backspace") {
     let value = e.target.value;
     if (value.length <= 4) {
@@ -165,5 +153,16 @@ cards.forEach((card) => {
     volText.textContent = card.dataset.volume;
     weightText.textContent = card.dataset.weight;
     priceText.textContent = card.dataset.price + "₽";
+  });
+});
+
+document.querySelectorAll("[data-scroll]").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(el.dataset.scroll);
+
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
