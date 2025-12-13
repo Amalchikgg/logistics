@@ -1,130 +1,147 @@
-const cities = {
-  novosibirsk: { x: 549, y: 578, name: "Новосибирск" },
-  krasnoyarsk: { x: 802, y: 507.5, name: "Красноярск" },
-};
+fetch("/assets/icons/activeMap.svg")
+  .then((res) => res.text())
+  .then((svg) => {
+    document.getElementById("activeMap").innerHTML = svg;
+    const cities = {
+      novosibirsk: { x: 549, y: 578, name: "Новосибирск" },
+      krasnoyarsk: { x: 802, y: 507.5, name: "Красноярск" },
+      moscow: { x: 225.5, y: 387.1, name: "Москва" },
+      spb: { x: 244.4, y: 255.8, name: "Санкт-Петербург" },
+    };
 
-function drawRoute(cityStartKey, cityEndKey, regionIds) {
-  const start = cities[cityStartKey];
-  const end = cities[cityEndKey];
-  const svgLayer = document.getElementById("routes-layer");
-  const markersLayer = document.getElementById("markers-layer");
+    function getFontSize() {
+      return window.innerWidth <= 1024 ? 14 : 20;
+    }
 
-  if (!start || !end) return console.error("Города не найдены");
+    function drawRoute(cityStartKey, cityEndKey, regionIds) {
+      const start = cities[cityStartKey];
+      const end = cities[cityEndKey];
+      const svgLayer = document.getElementById("routes-layer");
+      const markersLayer = document.getElementById("markers-layer");
 
-  // А. ЗАКРАШИВАЕМ РЕГИОНЫ
-  // Снимаем активность со всех
-  document
-    .querySelectorAll(".map-region")
-    .forEach((el) => el.classList.remove("is-active"));
-  // Добавляем активность нужным (по ID, которые вы проставите в SVG)
-  regionIds.forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) el.classList.add("is-active");
+      if (!start || !end) return console.error("Города не найдены");
+
+      document
+        .querySelectorAll(".map-region")
+        .forEach((el) => el.classList.remove("is-active"));
+
+      regionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add("is-active");
+      });
+
+      const midX = (start.x + end.x) / 2;
+      const midY = (start.y + end.y) / 2;
+      const curveOffset = 50;
+
+      const pathData = `M ${start.x} ${start.y} Q ${midX} ${
+        midY + curveOffset
+      } ${end.x} ${end.y}`;
+
+      const path = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "path"
+      );
+      path.setAttribute("d", pathData);
+      path.setAttribute("class", "route-line");
+
+      svgLayer.innerHTML = "";
+      svgLayer.appendChild(path);
+
+      markersLayer.innerHTML = "";
+
+      const FONT_SIZE = getFontSize();
+      const FONT_FAMILY = "Arial, sans-serif";
+      const FONT_WEIGHT = "normal";
+
+      const PADDING_X = 10;
+      const PADDING_Y = 10;
+      const GAP_FROM_PIN = 19;
+
+      [start, end].forEach((city) => {
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        g.setAttribute("class", "city-marker");
+        g.setAttribute("transform", `translate(${city.x}, ${city.y})`);
+
+        const pinPath = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "path"
+        );
+        pinPath.setAttribute(
+          "d",
+          `
+           
+            M0 0
+            C-7 -11 -14 -11 -14 -24
+            A14 14 0 1 1 14 -24
+            C14 -11 7 -11 0 0
+            Z
+        
+            
+            M0 -28
+            A5 5 0 1 0 0 -17
+            A5 5 0 1 0 0 -28
+            Z
+          `
+        );
+        pinPath.setAttribute("class", "pin-body");
+
+        pinPath.setAttribute("fill-rule", "evenodd");
+
+        const tempText = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "text"
+        );
+        tempText.textContent = city.name;
+        tempText.setAttribute("font-size", FONT_SIZE);
+        tempText.setAttribute("font-family", FONT_FAMILY);
+        tempText.setAttribute("font-weight", FONT_WEIGHT);
+
+        markersLayer.appendChild(tempText);
+        const textWidth = tempText.getComputedTextLength();
+        markersLayer.removeChild(tempText);
+
+        const rectWidth = textWidth + PADDING_X * 2;
+        const rectHeight = FONT_SIZE + PADDING_Y * 2;
+
+        const rectX = GAP_FROM_PIN;
+        const rectY = -20 - rectHeight / 2;
+
+        const rect = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "rect"
+        );
+        rect.setAttribute("x", rectX);
+        rect.setAttribute("y", rectY);
+        rect.setAttribute("width", rectWidth);
+        rect.setAttribute("height", rectHeight);
+        rect.setAttribute("rx", "8");
+        rect.setAttribute("fill", "#fff");
+
+        const text = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "text"
+        );
+        text.textContent = city.name;
+        text.setAttribute("x", rectX + rectWidth / 2);
+        text.setAttribute("y", rectY + rectHeight / 2 + FONT_SIZE / 3);
+        text.setAttribute("fill", "#C83A36");
+        text.setAttribute("font-size", FONT_SIZE);
+        text.setAttribute("font-family", FONT_FAMILY);
+        text.setAttribute("font-weight", FONT_WEIGHT);
+        text.setAttribute("text-anchor", "middle");
+
+        g.appendChild(pinPath);
+        g.appendChild(rect);
+        g.appendChild(text);
+
+        markersLayer.appendChild(g);
+      });
+    }
+
+    // ЗАПУСК: Имитация работы Бэкенда
+    // Бэкенд должен передать на страницу ключи городов и ID регионов
+    // Например: "krasnoyarsk", "novosibirsk", ["region-krasnoyarsk", "region-novosibirsk"]
+
+    drawRoute("moscow", "krasnoyarsk", ["region-moscow", "region-krasnoyarsk"]);
   });
-
-  // Б. РИСУЕМ ЛИНИЮ (Кривая Безье)
-  // Вычисляем контрольную точку, чтобы линия была изогнутой (провисала)
-  const midX = (start.x + end.x) / 2;
-  const midY = (start.y + end.y) / 2;
-  // Смещение кривой вниз по Y (чем больше число, тем сильнее прогиб)
-  const curveOffset = 50;
-
-  // Создаем путь: MoveTo Start -> QuadraticCurveTo ControlPoint, End
-  const pathData = `M ${start.x} ${start.y} Q ${midX} ${midY + curveOffset} ${
-    end.x
-  } ${end.y}`;
-
-  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-  path.setAttribute("d", pathData);
-  path.setAttribute("class", "route-line");
-  svgLayer.innerHTML = ""; // Очистить старые
-  svgLayer.appendChild(path);
-
-  // В. СТАВИМ МЕТКИ (ПИНЫ)
-  markersLayer.innerHTML = ""; // Очистить старые
-
-  const padding = 15; // Внутренний отступ контейнера
-  const textHeight = 14; // Примерная высота текста
-  const textOffsetX = 35; // Смещение текста от центра пина (X)
-  const textOffsetY = -30; // Смещение текста по Y (на уровень иконки)
-
-  [start, end].forEach((city) => {
-    // Группа для маркера
-    const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    g.setAttribute("class", "city-marker");
-    // Смещаем группу в координаты города
-    g.setAttribute("transform", `translate(${city.x}, ${city.y})`);
-
-    // 1. Иконка пина (нарисована кодом)
-    const pinPath = document.createElementNS(
-      "http://www.w3.org/2000/svg",
-      "path"
-    );
-    pinPath.setAttribute(
-      "d",
-      "M0 0 C-10 -15 -20 -15 -20 -30 A20 20 0 1 1 20 -30 C20 -15 10 -15 0 0 Z"
-    );
-    pinPath.setAttribute("class", "pin-body");
-
-    const pinCircle = document.createElementNS(
-      "http://www.w3.org/2000/svg",
-      "circle"
-    );
-    pinCircle.setAttribute("cx", "0");
-    pinCircle.setAttribute("cy", "-30");
-    pinCircle.setAttribute("r", "7");
-    pinCircle.setAttribute("class", "pin-center");
-
-    // 2. ТЕКСТ (НУЖЕН ДЛЯ ИЗМЕРЕНИЯ ДЛИНЫ)
-    // Создаем текст временно, чтобы узнать его длину
-    const tempText = document.createElementNS(
-      "http://www.w3.org/2000/svg",
-      "text"
-    );
-    tempText.textContent = city.name;
-    tempText.setAttribute("font-size", "14px");
-    tempText.setAttribute("font-weight", "bold");
-    markersLayer.appendChild(tempText); // Временно добавляем для измерения
-    const textWidth = tempText.getComputedTextLength() + 2 * padding; // Длина текста + отступы
-    markersLayer.removeChild(tempText); // Удаляем временный текст
-
-    // 3. БЕЛЫЙ КОНТЕЙНЕР (RECT)
-    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    // Позиция X: смещение от центра пина (0), плюс небольшой отступ
-    rect.setAttribute("x", textOffsetX - padding);
-    // Позиция Y: на уровне Y текста, минус padding
-    rect.setAttribute("y", textOffsetY - textHeight / 2 - padding / 2);
-    rect.setAttribute("width", textWidth);
-    rect.setAttribute("height", textHeight + padding);
-    rect.setAttribute("rx", "6"); // Закругление углов
-    rect.setAttribute("fill", "white");
-    rect.setAttribute("stroke-width", "1");
-    rect.setAttribute("filter", "url(#shadow)"); // Опционально: можно добавить тень (см. ниже)
-
-    // 4. ТЕКСТ ОКОНЧАТЕЛЬНЫЙ
-    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    text.textContent = city.name;
-    text.setAttribute("x", textOffsetX + textWidth / 2 - padding); // Выравниваем по центру контейнера
-    text.setAttribute("y", textOffsetY + textHeight / 4); // Небольшая коррекция Y
-    text.setAttribute("fill", "#E63946");
-    text.setAttribute("font-size", "14px");
-    text.setAttribute("font-weight", "bold");
-    text.setAttribute("text-anchor", "middle"); // Выравнивание по центру точки
-
-    // Сборка группы
-    g.appendChild(pinPath);
-    g.appendChild(pinCircle);
-    g.appendChild(rect); // Сначала прямоугольник (фон)
-    g.appendChild(text); // Потом текст (поверх фона)
-    markersLayer.appendChild(g);
-  });
-}
-
-// ЗАПУСК: Имитация работы Бэкенда
-// Бэкенд должен передать на страницу ключи городов и ID регионов
-// Например: "krasnoyarsk", "novosibirsk", ["region-krasnoyarsk", "region-novosibirsk"]
-
-drawRoute("novosibirsk", "krasnoyarsk", [
-  "region-krasnoyarsk",
-  "region-novosibirsk",
-]);

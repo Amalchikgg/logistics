@@ -577,3 +577,14 @@ button {
 .truck-card:not(.active) p {
   color: #3a3a3a99 !important;
 }
+
+.tab-btn {
+  background: #f2f5f7;
+  color: #3a3a3a;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background: #3a3a3a;
+  color: #fff;
+}

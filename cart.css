@@ -1,12 +1,13 @@
 .map-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
 }
 
-svg {
-  width: 100%;
+.map-container svg {
+  min-width: 768px;
   height: auto;
   display: block;
 }
@@ -33,7 +34,7 @@ svg {
   fill: none;
   stroke: #555;
   stroke-width: 2;
-  stroke-dasharray: 6 4; /* Пунктир */
+  stroke-dasharray: 9 9; /* Пунктир */
   stroke-linecap: round;
   pointer-events: none; /* Чтобы не мешала кликам */
   animation: dash 30s linear infinite; /* Анимация движения (опционально) */
@@ -44,11 +45,9 @@ svg {
   cursor: pointer;
   transition: transform 0.2s;
 }
-.city-marker:hover {
-  transform: scale(1.2);
-}
+
 .pin-body {
-  fill: #e63946; /* Красный цвет */
+  fill: #c83a36; /* Красный цвет */
 }
 .pin-center {
   fill: #333;
