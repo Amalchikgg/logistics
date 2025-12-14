@@ -51,7 +51,7 @@ fetch("/assets/icons/activeMap.svg")
       markersLayer.innerHTML = "";
 
       const FONT_SIZE = getFontSize();
-      const FONT_FAMILY = "Arial, sans-serif";
+      const FONT_FAMILY = "TTFirstNeue, sans-serif";
       const FONT_WEIGHT = "normal";
 
       const PADDING_X = 10;
