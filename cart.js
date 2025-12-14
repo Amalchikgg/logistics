@@ -5,7 +5,7 @@ fetch("/assets/icons/activeMap.svg")
     const cities = {
       novosibirsk: { x: 549, y: 578, name: "Новосибирск" },
       krasnoyarsk: { x: 802, y: 507.5, name: "Красноярск" },
-      moscow: { x: 225.5, y: 387.1, name: "Москва" },
+      moscow: { x: 224.1, y: 391.1, name: "Москва" },
       spb: { x: 244.4, y: 255.8, name: "Санкт-Петербург" },
     };
 
