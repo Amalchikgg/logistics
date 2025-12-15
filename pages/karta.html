@@ -11,7 +11,6 @@
         background: #f4f4f4;
       }
 
-      /* Контейнер карты - делает ее адаптивной */
       .map-container {
         position: relative;
         width: 100%;
@@ -25,34 +24,26 @@
         display: block;
       }
 
-      /* --- Стилизация регионов --- */
-
-      /* Все регионы по умолчанию */
       .map-region {
-        fill: #e4e6e8; /* Цвет из вашего кода */
+        fill: #e4e6e8;
         transition: fill 0.3s ease;
         cursor: pointer;
       }
 
-      /* Класс для активного региона (добавляется через JS или Бэк) */
       .map-region.is-active {
-        fill: #333333 !important; /* Темно-серый как на макете */
+        fill: #333333 !important;
       }
 
-      /* --- Стилизация маршрута и меток --- */
-
-      /* Линия маршрута */
       .route-line {
         fill: none;
         stroke: #555;
         stroke-width: 2;
-        stroke-dasharray: 6 4; /* Пунктир */
+        stroke-dasharray: 6 4;
         stroke-linecap: round;
-        pointer-events: none; /* Чтобы не мешала кликам */
-        animation: dash 30s linear infinite; /* Анимация движения (опционально) */
+        pointer-events: none;
+        animation: dash 30s linear infinite;
       }
 
-      /* Метка города (Пин) */
       .city-marker {
         cursor: pointer;
         transition: transform 0.2s;
@@ -61,19 +52,18 @@
         transform: scale(1.2);
       }
       .pin-body {
-        fill: #e63946; /* Красный цвет */
+        fill: #e63946;
       }
       .pin-center {
         fill: #333;
       }
 
-      /* Текст названия города */
       .city-label {
         font-size: 14px;
         font-weight: bold;
         fill: #e63946;
-        text-anchor: middle; /* Выравнивание по центру */
-        transform: translateY(-45px); /* Поднять над пином */
+        text-anchor: middle;
+        transform: translateY(-45px);
         background-color: white;
         text-shadow: 0px 0px 5px white;
       }
@@ -1067,7 +1057,6 @@
     </div>
 
     <script>
-      // Ждем загрузки карты
       document.addEventListener("DOMContentLoaded", () => {
         const paths = document.querySelectorAll("svg path");
         const svg = document.querySelector("svg");
@@ -1076,7 +1065,6 @@
           point.x = e.clientX;
           point.y = e.clientY;
 
-          // Преобразуем координаты экрана в координаты внутри SVG
           const svgPoint = point.matrixTransform(svg.getScreenCTM().inverse());
 
           console.log(
@@ -1085,25 +1073,20 @@
         });
 
         paths.forEach((path, index) => {
-          // 1. Добавляем красную обводку при наведении, чтобы видеть границы
           path.addEventListener("mouseenter", function () {
             this.style.fill = "red";
             this.style.cursor = "pointer";
           });
 
-          // 2. Возвращаем цвет обратно
           path.addEventListener("mouseleave", function () {
-            this.style.fill = ""; // Сброс к CSS или атрибуту
+            this.style.fill = "";
           });
 
-          // 3. ПРИ КЛИКЕ: Выводим инфо в консоль
           path.addEventListener("click", function () {
-            // Берем первые 20 символов координат, чтобы вы могли найти их через Ctrl+F
             const coordSnippet = this.getAttribute("d").substring(0, 30);
 
             console.log(`Ищите в файле этот код: ${coordSnippet}...`);
 
-            // Можно даже автоматически скопировать в буфер
             navigator.clipboard.writeText(coordSnippet);
           });
         });
