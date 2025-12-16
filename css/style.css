@@ -2,32 +2,32 @@
 
 @font-face {
   font-family: "TTFirstNeue";
-  src: url("./fonts/TTFirsNeue-Regular.ttf");
+  src: url("../fonts/TTFirsNeue-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TTFirstNeue";
-  src: url("./fonts/TTFirsNeueTrialBold.ttf");
+  src: url("../fonts/TTFirsNeueTrialBold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "TTFirstNeue";
-  src: url("./fonts/TTFirsNeueTrialDemiBold.ttf");
+  src: url("../fonts/TTFirsNeueTrialDemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "TTFirstNeue";
-  src: url("./fonts/TTFirsNeueTrialMedium.ttf");
+  src: url("../fonts/TTFirsNeueTrialMedium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "TTFirstNeue";
-  src: url("./fonts/TTFirsNeueTrialLight.ttf");
+  src: url("../fonts/TTFirsNeueTrialLight.ttf");
   font-weight: 300;
   font-style: normal;
 }
