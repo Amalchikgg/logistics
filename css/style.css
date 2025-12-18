@@ -209,7 +209,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/icons/formLine.svg");
+  background-image: url("../assets/icons/formLine.svg");
   background-size: 100% auto;
   background-position: center 60%;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@ button {
   right: -0px;
   width: 90%;
   height: 100%;
-  background-image: url("./assets/icons/footerLine.svg");
+  background-image: url("../assets/icons/footerLine.svg");
   background-size: 100% auto;
   background-position: top right;
   background-repeat: no-repeat;
@@ -394,7 +394,7 @@ button {
     right: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("./assets/icons/footerLineMobile.svg");
+    background-image: url("../assets/icons/footerLineMobile.svg");
     background-size: 100% auto;
     background-position: top right;
     background-repeat: no-repeat;
