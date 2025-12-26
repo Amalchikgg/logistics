@@ -133,6 +133,7 @@ document.getElementById("arrowUp")?.addEventListener("click", () => {
 
 //cards
 const cards = document.querySelectorAll(".truck-card");
+const formCards = document.querySelectorAll(".truck-card-form");
 
 const bigTitle = document.querySelector("#big-title");
 const lenText = document.querySelector("#len");
@@ -153,6 +154,13 @@ cards.forEach((card) => {
     volText.textContent = card.dataset.volume;
     weightText.textContent = card.dataset.weight;
     priceText.textContent = card.dataset.price + "₽";
+  });
+});
+
+formCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
   });
 });
 

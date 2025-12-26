@@ -578,6 +578,27 @@ button {
   color: #3a3a3a99 !important;
 }
 
+.truck-card-form {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.truck-card-form.active {
+  background: #e8ebed !important;
+}
+
+.truck-card-form:not(.active) {
+  background: #f2f5f7 !important;
+}
+
+.truck-card-form.active p {
+  color: #3a3a3a !important;
+}
+
+.truck-card-form:not(.active) p {
+  color: #3a3a3a99 !important;
+}
+
 .tab-btn {
   background: #f2f5f7;
   color: #3a3a3a;

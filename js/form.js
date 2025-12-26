@@ -136,3 +136,17 @@ function initAddressForm(form) {
     }
   });
 }
+
+const items = document.querySelectorAll(".car-item");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    items.forEach((i) => {
+      i.classList.remove("bg-[#e8ebed]");
+      i.classList.add("bg-[#F2F5F7]");
+    });
+
+    item.classList.remove("bg-[#F2F5F7]");
+    item.classList.add("bg-[#e8ebed]");
+  });
+});
