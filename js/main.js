@@ -176,3 +176,38 @@ buttons.forEach((btn) => {
     btn.classList.add("active");
   });
 });
+
+//comments pagination
+
+const totalPages = 149; // всего страниц
+let currentPage = 1;
+
+const currentPageEl = document.getElementById("currentPage");
+const totalPagesEl = document.getElementById("totalPages");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+totalPagesEl.textContent = totalPages;
+
+function updatePagination() {
+  currentPageEl.textContent = currentPage;
+
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = currentPage === totalPages;
+}
+
+prevBtn.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updatePagination();
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    updatePagination();
+  }
+});
+
+updatePagination();
