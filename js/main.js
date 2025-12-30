@@ -26,6 +26,52 @@ document.addEventListener("click", (e) => {
 
 menu.addEventListener("click", (e) => e.stopPropagation());
 
+document.addEventListener("click", (e) => {
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+});
+
+document.querySelectorAll(".dropdown-trigger").forEach((trigger) => {
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const dropdown = trigger.closest(".dropdown");
+
+    // закрываем остальные
+    document.querySelectorAll(".dropdown").forEach((d) => {
+      if (d !== dropdown) d.classList.remove("active");
+    });
+
+    dropdown.classList.toggle("active");
+  });
+});
+const mainMenu = document.querySelector(".menu-main");
+const screens = document.querySelectorAll(".menu-screen");
+
+document.querySelectorAll("[data-target]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = btn.dataset.target;
+
+    screens.forEach((screen) => screen.classList.remove("active"));
+    mainMenu.classList.add("hide");
+
+    document
+      .querySelector(`.menu-sub[data-menu="${target}"]`)
+      .classList.add("active");
+  });
+});
+
+document.querySelectorAll(".menu-back").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    screens.forEach((screen) => screen.classList.remove("active"));
+    mainMenu.classList.remove("hide");
+    mainMenu.classList.add("active");
+  });
+});
+
 //Slider
 
 const swiperElement = document.querySelector(".mySwiper");

@@ -1,7 +1,7 @@
 .radio-group {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
 }
 
 .radio-item {
@@ -9,7 +9,7 @@
   align-items: center;
   gap: 24px;
   padding: 0 16px;
-  height: 3.5rem;
+  height: 3rem;
   border-radius: 12px;
   background: #f2f5f7;
   cursor: pointer;

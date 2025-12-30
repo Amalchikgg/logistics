@@ -18,10 +18,11 @@
   </head>
   <body>
     <header
+      id="header"
       class="top-0 relative max-[768px]:ronded-xl max-[768px]:px-4 max-[768px]:py-3.5 mx-auto z-100 bg-[#3A3A3A] py-6 px-10 max-[1440px]:py-6 max-[1440px]:px-10 max w-full rounded-b-[25px] border-b border-b-[#FFFFFF33] flex justify-between items-center"
     >
       <div class="flex gap-6 items-center">
-        <a href="/">
+        <a href="/index.html">
           <img
             src="../assets/icons/logo.svg"
             alt="logo"
@@ -29,17 +30,74 @@
           />
         </a>
         <div class="flex gap-6 max-[1440px]:hidden">
-          <div class="flex items-center gap-1">
-            <p class="text-white font-medium text-xl leading-[100%]">
-              Грузоперевозки
-            </p>
-            <img src="../assets/icons/chevron.svg" alt="chevron" />
+          <div class="dropdown">
+            <button
+              class="flex items-center gap-1 dropdown-trigger"
+              type="button"
+            >
+              <p class="text-white font-medium text-xl">Грузоперевозки</p>
+              <img src="../assets/icons/chevron.svg" alt="chevron" />
+            </button>
+            <div class="dropdown-menu">
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки фурами</a
+              >
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки 1.5 тонны</a
+              >
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки 3 тонны</a
+              >
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки 5 тонн</a
+              >
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки 10 тонн</a
+              >
+              <a
+                href="./cargo_transportation.html"
+                class="text-white font-medium text-xl"
+                >Грузоперевозки 20 тонн</a
+              >
+            </div>
           </div>
-          <a href="./road_transportation.html" class="flex items-center gap-1">
-            <p class="header_title">Автоперевозки</p>
-            <img src="../assets/icons/chevron.svg" alt="chevron" />
-          </a>
-          <a class="header_title">Расчет стоимости</a>
+          <div class="dropdown">
+            <button
+              class="flex items-center gap-1 dropdown-trigger"
+              type="button"
+            >
+              <p class="header_title">Автоперевозки</p>
+              <img src="../assets/icons/chevron.svg" alt="chevron" />
+            </button>
+            <div class="dropdown-menu">
+              <a
+                href="./road_transportation.html"
+                class="text-white font-medium text-xl"
+                >Международные перевозки</a
+              >
+              <a
+                href="./road_transportation.html"
+                class="text-white font-medium text-xl"
+                >Междугородние перевозки</a
+              >
+              <a
+                href="./road_transportation.html"
+                class="text-white font-medium text-xl"
+                >Перевозка негабаритных грузов</a
+              >
+            </div>
+          </div>
+          <p class="header_title">Расчет стоимости</p>
           <a href="./pricelist.html" class="header_title">Прайс-лист</a>
         </div>
       </div>
@@ -87,53 +145,124 @@
             </div>
           </div>
         </div>
-        <div class="px-5">
-          <div class="flex items-center gap-1 justify-between mb-8">
-            <p
-              class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
-            >
-              Грузоперевозки
-            </p>
-            <img src="../assets/icons/chevron.svg" alt="chevron" class="mt-1" />
-          </div>
-          <a
-            href="./road_transportation.html"
-            class="flex items-center gap-1 justify-between mb-8"
-          >
-            <p
-              href="./road_transportation.html"
-              class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
-            >
-              Автоперевозки
-            </p>
-            <img src="../assets/icons/chevron.svg" alt="chevron" class="mt-1" />
-          </a>
-          <p
-            class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem] mb-8"
-          >
-            Расчет стоимости
-          </p>
-          <a
-            href="./pricelist.html"
-            class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem] mb-8"
-          >
-            Прайс-лист
-          </a>
-          <div class="hidden max-[768px]:flex gap-3 mt-8">
+        <div class="px-5 menu-content">
+          <div class="menu-screen menu-main active">
             <button
-              class="bg-[#C83A36] h-10 w-40 rounded-xl text-white font-medium text-sm!"
+              type="button"
+              data-target="cargo"
+              class="flex items-center w-full gap-1 justify-between mb-8 menu-link"
             >
-              Заказать звонок
+              <p
+                class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >
+                Грузоперевозки
+              </p>
+              <img
+                src="../assets/icons/chevron.svg"
+                alt="chevron"
+                class="mt-1"
+              />
             </button>
-            <div class="header_icon_wrap w-10! h-10!">
-              <img src="../assets/icons/phone.svg" alt="phone" />
+            <button
+              data-target="road"
+              class="flex items-center w-full menu-link gap-1 justify-between mb-8"
+            >
+              <p
+                class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >
+                Автоперевозки
+              </p>
+              <img
+                src="../assets/icons/chevron.svg"
+                alt="chevron"
+                class="mt-1"
+              />
+            </button>
+            <p
+              class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem] mb-8"
+            >
+              Расчет стоимости
+            </p>
+            <a
+              href="./pricelist.html"
+              class="text-white font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem] mb-8"
+            >
+              Прайс-лист
+            </a>
+            <div class="hidden max-[768px]:flex gap-3 mt-8">
+              <button
+                class="bg-[#C83A36] h-10 w-40 rounded-xl text-white font-medium text-sm!"
+              >
+                Заказать звонок
+              </button>
+              <div class="header_icon_wrap w-10! h-10!">
+                <img src="../assets/icons/phone.svg" alt="phone" />
+              </div>
             </div>
+          </div>
+          <div class="menu-screen menu-sub" data-menu="cargo">
+            <button class="menu-back">
+              <img
+                src="../assets/icons/chevron.svg"
+                alt="chevron"
+                class="rotate-90"
+              />
+              Меню / Грузоперевозки
+            </button>
+
+            <a
+              href="./cargo_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Грузоперевозки 5т</a
+            >
+            <a
+              href="./cargo_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Грузоперевозки 10т</a
+            >
+            <a
+              href="./cargo_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Грузоперевозки 15т</a
+            >
+            <a
+              href="./cargo_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Грузоперевозки 20т</a
+            >
+          </div>
+
+          <div class="menu-screen menu-sub" data-menu="road">
+            <button class="menu-back">
+              <img
+                src="../assets/icons/chevron.svg"
+                alt="chevron"
+                class="rotate-90"
+              />
+              Меню / Автоперевозки
+            </button>
+
+            <a
+              href="./road_transportation.html"
+              class="text-white block font-medium mb-8 text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Междугородние перевозки</a
+            >
+            <a
+              href="./road_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Международные перевозки</a
+            >
+            <a
+              href="./road_transportation.html"
+              class="text-white block mb-8 font-medium text-5xl leading-[100%] max-[768px]:text-[1.75rem]"
+              >Перевозка негабаритных грузов</a
+            >
           </div>
         </div>
       </div>
     </header>
     <div
-      class="swiper mySwiper relative -mt-7.5 max-[1440px]:-mt-23 overflow-hidden -z-10 mx-auto mb-40 max-[1440px]:mb-20 max-[768px]:mb-16"
+      class="swiper mySwiper relative -mt-22.5 max-[1440px]:-mt-23 overflow-hidden -z-10 mx-auto mb-40 max-[1440px]:mb-20 max-[768px]:mb-16"
     >
       <div class="swiper-wrapper rounded-b-[56px]">
         <div class="swiper-slide">
@@ -241,7 +370,7 @@
       </div>
       <div class="swiper-pagination"></div>
       <div
-        class="flex justify-between gap-10 max-[1024px]:flex-col max-[1024px]:gap-10 max-[1024px]:items-center absolute w-full top-0 z-10 px-10 pt-22.5 max-[1440px]:pt-32.5 max-[768px]:px-4 max-[768px]:pt-30"
+        class="flex justify-between gap-10 max-[1024px]:flex-col max-[1024px]:gap-10 max-[1024px]:items-center absolute w-full top-0 z-10 px-15 pt-34 max-[1440px]:pt-32.5 max-[768px]:px-4 max-[768px]:pt-30"
       >
         <div
           class="max-w-[793px] max-[1440px]:max-w-[431px] max-[1024px]:max-w-full"
@@ -269,7 +398,7 @@
           </button>
         </div>
         <div
-          class="w-[722px] shrink-0 max-[1920px]:max-h-[87vh] max-[1440px]:max-h-full overflow-auto bg-white p-8 rounded-3xl max-[1440px]:w-[504px] max-[1024px]:w-[728px] max-[1024px]:p-6 max-[768px]:hidden"
+          class="w-[722px] max-[1920px]:max-h-[80vh] max-[1440px]:max-h-full overflow-auto bg-white p-8 rounded-3xl max-[1440px]:w-[504px] max-[1024px]:w-[728px] max-[1024px]:p-6 max-[768px]:hidden"
         >
           <h2
             class="text-[#3A3A3A] font-medium leading-[100%] space3 text-[2rem] mb-6"
@@ -280,98 +409,99 @@
             <input
               data-role="from"
               type="text"
-              class="flex-1 address-input h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 address-input h-12 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Откуда"
             />
             <img src="../assets/icons/arrowLeftRight.svg" alt="arrow" />
             <input
               data-role="to"
               type="text"
-              class="flex-1 address-input h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 address-input h-12 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Куда"
             />
             <div id="suggestions" class="suggestions"></div>
           </div>
-          <p class="text-[#3A3A3A] mb-4 font-medium text-2xl space3">
+          <p class="text-[#3A3A3A] mb-2 font-medium text-xl space3">
             Способ перевозки
           </p>
           <div class="radio-group" data-group="transport">
-            <div
-              class="radio-item max-[1440px]:h-13! active"
-              data-value="separate"
-            >
+            <div class="radio-item active" data-value="separate">
               <div class="radio-custom"></div>
               <div class="radio-text">Отдельная машина</div>
             </div>
 
-            <div class="radio-item max-[1440px]:h-13!" data-value="partial">
+            <div class="radio-item" data-value="partial">
               <div class="radio-custom"></div>
               <div class="radio-text">Догруз</div>
             </div>
           </div>
-          <div id="cars" class="flex mb-4 gap-4 overflow-auto">
+          <div id="cars" class="flex mb-4 gap-2 overflow-auto">
             <div
-              class="p-4 truck-card-form active rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
+              class="p-2 truck-card-form active rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
             >
-              <img src="../assets/icons/formCar.svg" alt="car" class="mb-2.5" />
+              <img
+                src="../assets/icons/formCar.svg"
+                alt="car"
+                class="mb-1 w-[75px] h-12"
+              />
               <p
-                class="max-w-21 text-lg text-center text-[#3A3A3A] font-medium"
+                class="max-w-21 text-center leading-6 text-[#3A3A3A] font-medium"
               >
                 1,5 тонн до 10м³
               </p>
             </div>
             <div
-              class="p-4 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
+              class="p-2 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
             >
               <img
                 src="../assets/icons/formCar2.svg"
                 alt="car"
-                class="mb-2.5"
+                class="mb-1 w-[75px] h-12"
               />
               <p
-                class="max-w-21 text-lg text-center text-[#3A3A3A] font-medium"
+                class="max-w-21 text-center leading-6 text-[#3A3A3A] font-medium"
               >
                 3 тонн до 20м³
               </p>
             </div>
             <div
-              class="p-4 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
+              class="p-2 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
             >
               <img
                 src="../assets/icons/formCar3.svg"
                 alt="car"
-                class="mb-2.5"
+                class="mb-1 w-[75px] h-12"
               />
               <p
-                class="max-w-21 text-lg text-center text-[#3A3A3A] font-medium"
+                class="max-w-21 text-center leading-6 text-[#3A3A3A] font-medium"
               >
                 5 тонн до 35м³
               </p>
             </div>
             <div
-              class="p-4 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
+              class="p-2 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30 bg-[#F2F5F7] flex flex-col items-center shrink-0"
             >
               <img
                 src="../assets/icons/formCar4.svg"
                 alt="car"
-                class="mb-2.5"
+                class="mb-1 w-[75px] h-12"
               />
               <p
-                class="max-w-21 text-lg text-center text-[#3A3A3A] font-medium"
+                class="max-w-21 text-center leading-6 text-[#3A3A3A] font-medium"
               >
                 10 тонн до 55м³
               </p>
             </div>
             <div
-              class="p-4 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30! bg-[#F2F5F7] flex flex-col items-center shrink-0"
+              class="p-2 truck-card-form rounded-xl min-[1440px]:flex-1 max-[1440px]:w-30! bg-[#F2F5F7] flex flex-col items-center shrink-0"
             >
               <img
                 src="../assets/icons/formCar5.svg"
                 alt="car"
-                class="mb-2.5"
+                class="mb-1 w-[75px] h-12"
               />
               <p
-                class="max-w-21 text-lg text-center text-[#3A3A3A] font-medium"
+                class="max-w-21 text-center leading-6 text-[#3A3A3A] font-medium"
               >
                 20 тонн до 92м³
               </p>
@@ -408,27 +538,27 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-4 mb-4">
+          <div class="flex items-center gap-4 mb-2">
             <input
               type="text"
-              class="flex-1 h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 h-12 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Вес груза"
             />
             <input
               type="text"
-              class="flex-1 h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 h-12 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Объем (м3)"
             />
           </div>
           <div class="flex items-center gap-4 mb-6">
             <input
               type="text"
-              class="flex-1 h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 h-12 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Наименование груза"
             />
             <input
               type="text"
-              class="flex-1 h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:h-13 max-[1440px]:text-sm"
+              class="flex-1 h-14 bg-[#F2F5F7] rounded-xl p-4 outline-none text-lg max-[1440px]:text-sm"
               placeholder="Габариты"
             />
           </div>
@@ -810,54 +940,114 @@
         </div>
       </section>
       <section
-        class="px-15 max-[1440px]:px-10 max-[768px]:px-4 mb-40 max-[1440px]:mb-20 max-[768px]:mb-16"
+        class="flex gap-10 max-[1440px]:gap-5 mb-23 pl-15 max-[1440px]:pl-10 relative max-[1440px]:mb-20 max-[768px]:mb-16 max-[1024px]:pl-5 max-[1024px]:gap-2 max-[768px]:px-4 max-[768px]:flex-col"
       >
-        <div class="flex mb-15.5 max-[768px]:flex-col max-[1440px]:mb-6">
-          <div class="flex-1 max-[768px]:mb-4">
-            <h2
-              class="title max-w-172 max-[1440px]:max-w-md max-[1024px]:max-w-62 max-[768px]:w-full"
-            >
-              Особенности грузоперевозок 10 тонн
-            </h2>
-          </div>
-          <div class="flex-1">
-            <p
-              class="text-[#3A3A3A] mb-8 space3 text-xl max-w-140 max-[1440px]:text-sm max-[1440px]:max-w-79 max-[1024px]:w-full max-[1024px]:mb-6"
-            >
-              Перевозки грузов до 10 тонн — оптимальный выбор для доставки
-              крупной партии товара на средние и дальние расстояния.
-              Используются тентованные, бортовые или изотермические машины в
-              зависимости от типа груза. Возможна боковая и верхняя загрузка.
-            </p>
-            <a href="./contacts.html">
-              <button
-                class="text-white p-4.5 flex items-center max-[1440px]:p-4 max-[768px]:w-full justify-center gap-2 text-xl bg-[#C83A36] font-medium rounded-xl max-[1024px]:text-base!"
+        <div class="flex-1 flex flex-col justify-between">
+          <div
+            class="flex items-center justify-between max-[1440px]:items-start"
+          >
+            <div>
+              <h2 class="title max-[768px]:mb-4">О компании</h2>
+              <p
+                class="space3 hidden text-xl leading-7 mb-8 max-[768px]:block max-[768px]:text-sm max-[768px]:leading-4.5 max-[768px]:mb-6"
               >
-                Подробнее о компании
-                <img
-                  src="../assets/icons/chevron.svg"
-                  alt="chevron"
-                  class="-rotate-90"
-                />
-              </button>
-            </a>
+                “Грузовые линии” - надежный оператор грузоперевозок,
+                специализирующийся на логистических решениях с 2008 года, и
+                берет на себя весь спектр ваших транспортныз задач
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="flex gap-3 mb-3 max-[1440px]:gap-2 max-[1024px]:mb-2 shrink-0"
+            >
+              <div class="about_company_wrap radius_left">
+                <div class="about_icon_wrap">
+                  <img
+                    src="../assets/icons/check.svg"
+                    alt="check"
+                    class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
+                  />
+                </div>
+                <p class="about_title">3000+</p>
+                <p class="about_info min-[1919px]:max-w-[200px]">
+                  Заказов выполняем ежемесячно
+                </p>
+              </div>
+              <div class="about_company_wrap radius_right">
+                <div class="about_icon_wrap">
+                  <img
+                    src="../assets/icons/location.svg"
+                    alt="check"
+                    class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
+                  />
+                </div>
+                <p class="about_title">1700+</p>
+                <p class="about_info">
+                  Городов охватывает наша география перевозок
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 max-[1024px]:gap-2">
+              <div class="about_company_wrap radius_left">
+                <div class="about_icon_wrap">
+                  <img
+                    src="../assets/icons/rubl.svg"
+                    alt="check"
+                    class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
+                  />
+                </div>
+                <p class="about_title">15 млн ₽</p>
+                <p class="about_info min-[1919px]:whitespace-nowrap">
+                  Страховое покрытие ответсвенности
+                </p>
+              </div>
+              <div class="about_company_wrap radius_right">
+                <div class="about_icon_wrap">
+                  <img
+                    src="../assets/icons/clock.svg"
+                    alt="check"
+                    class="max-[1440px]:w-6 max-[1440px]:h-6 max-[768px]:w-3 max-[768px]:h-3"
+                  />
+                </div>
+                <p class="about_title">17+ лет</p>
+                <p class="about_info">на рынке грузоперевозок</p>
+              </div>
+            </div>
           </div>
         </div>
-        <img
-          src="../assets/images/cargo_main.png"
-          alt="news"
-          class="w-full max-[1024px]:hidden"
-        />
-        <img
-          src="../assets/images/cargo_main_tablet.png"
-          alt="news"
-          class="w-full max-[1024px]:block hidden max-[768px]:hidden"
-        />
-        <img
-          src="../assets/images/cargo_main_mobile.png"
-          alt="news"
-          class="w-full max-[768px]:block hidden"
-        />
+
+        <div class="relative flex-1">
+          <p class="font-medium text-2xl mb-6 space3 max-[1440px]:hidden">
+            Логистика для бизнеса
+            <span class="text-[#C83A36] leading-8"
+              >с надежным перевозчиком</span
+            >
+          </p>
+          <p
+            class="space3 text-xl leading-7 mb-8 max-w-148 max-[1440px]:max-w-79 max-[1024px]:max-w-full max-[1440px]:text-sm max-[1440px]:leading-4.5 max-[1024px]:mb-6 max-[768px]:hidden"
+          >
+            “Грузовые линии” - надежный оператор грузоперевозок,
+            специализирующийся на логистических решениях с 2008 года, и берет на
+            себя весь спектр ваших транспортныз задач
+          </p>
+          <a
+            href="./contacts.html"
+            class="w-[18rem] mb-7 max-[768px]:mb-6 h-16 max-[768px]:w-full max-[1440px]:text-base! max-[768px]:text-base! max-[1440px]:h-13 max-[1440px]:w-59.5 rounded-xl flex items-center justify-center gap-2.5 bg-[#C83A36] text-xl text-white"
+          >
+            Подробнее о компании
+            <img
+              src="../assets/icons/chevron.svg"
+              alt="chevron"
+              class="-rotate-90"
+            />
+          </a>
+          <img
+            src="../assets/images/about_company.png"
+            alt="about"
+            class="h-185 object-cover w-full max-[1920px]:h-160 max-[1439px]:w-125.5 max-[1439px]:h-110 max-[768px]:w-82 max-[768px]:h-82 max-[768px]:rounded-3xl! max-[768px]:mt-0 max-[1440px]:mt-11 rounded-l-4xl max-[1024px]:mt-17 max-[1024px]:rounded-l-3xl max-[1024px]:h-102.5 max-[1024px]:w-81"
+          />
+        </div>
       </section>
       <section
         class="rounded-[56px] relative z-10 max-[1440px]:rounded-[28px] bg-[#E4E6E8] max-[768px]:px-4 max-[1024px]:rounded-3xl p-15 max-[1440px]:p-10"
@@ -1335,119 +1525,7 @@
           />
         </button>
       </section>
-      <section
-        class="bg-[#E4E6E8] rounded-[56px] max-[768px]:mb-8 max-[768px]:px-4 max-[1024px]:rounded-3xl max-[1024px]:px-8 px-15 py-40 flex justify-between max-[1024px]:flex-col max-[1024px]:gap-10 max-[768px]:gap-6 mb-30 max-[1440px]:p-10 max-[1440px]:mb-20"
-      >
-        <div>
-          <div
-            class="max-[1024px]:flex justify-between items-center max-[768px]:flex-col max-[768px]:items-start max-[768px]:gap-4"
-          >
-            <h2 class="title mb-8 max-[1024px]:mb-0">Наши партнеры</h2>
-            <p
-              class="text-xl max-w-90 text-[#3A3A3A] max-[1440px]:text-base max-[1024px]:text-sm"
-            >
-              Нам доверяют крупнейшие компании и малый бизнес по всей стране
-            </p>
-          </div>
-        </div>
-        <div
-          class="max-w-[70%] w-full grid grid-cols-3 gap-3 max-[1024px]:max-w-full max-[768px]:grid-cols-2"
-        >
-          <div
-            class="radius_left bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner1.svg"
-              class="max-[1440px]:w-22.5 max-[768px]:w-16.25"
-            />
-          </div>
-          <div
-            class="radius_full bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner2.svg"
-              class="max-[1440px]:w-25.5 max-[768px]:w-19.5"
-            />
-          </div>
-          <div
-            class="radius_right bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner3.svg"
-              class="max-[1440px]:w-38.5 max-[768px]:w-19.75"
-            />
-          </div>
-          <div
-            class="radius_left bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner4.svg"
-              class="max-[1440px]:w-36 max-[768px]:w-21"
-            />
-          </div>
-          <div
-            class="radius_full bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner5.svg"
-              class="max-[1440px]:w-24 max-[768px]:w-17"
-            />
-          </div>
-          <div
-            class="radius_right bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner6.svg"
-              class="max-[1440px]:w-23.5 max-[768px]:w-18"
-            />
-          </div>
-          <div
-            class="radius_left bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner7.svg"
-              class="max-[1440px]:w-17 max-[768px]:w-10.5"
-            />
-          </div>
-          <div
-            class="radius_full bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img src="../assets/icons/partner8.svg" class="max-[1440px]:w-24" />
-          </div>
-          <div
-            class="radius_right bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner9.svg"
-              class="max-[1440px]:w-37 max-[768px]:w-26"
-            />
-          </div>
-          <div
-            class="radius_left bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner10.svg"
-              class="max-[1440px]:w-31.5 max-[768px]:w-21.5"
-            />
-          </div>
-          <div
-            class="radius_full bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner11.svg"
-              class="max-[1440px]:w-38 max-[768px]:w-28.5"
-            />
-          </div>
-          <div
-            class="radius_right bg-white py-7.5 flex items-center justify-center max-[768px]:py-3.5 max-[768px]:h-20"
-          >
-            <img
-              src="../assets/icons/partner12.svg"
-              class="max-[1440px]:w-40 max-[768px]:w-27.5"
-            />
-          </div>
-        </div>
-      </section>
+
       <section
         class="px-15 max-[1440px]:px-10 max-[768px]:px-4 mb-36 max-[1440px]:mb-10 max-[768px]:mb-16"
       >
@@ -1682,7 +1760,7 @@
               Мы открыли новое направление для доставки в малые населённые
               пункты. Теперь ваши грузы доберутся ещё быстрее.
             </p>
-            <p class="#3A3A3A space3">28 июня 2025</p>
+            <p class="text-[#3A3A3A] space3">28 июня 2025</p>
           </a>
           <a
             href="/blog.html"
@@ -1702,7 +1780,7 @@
               Благодаря оптимизации логистики мы сократили среднее время
               доставки по городу до 3 часов.
             </p>
-            <p class="#3A3A3A space3">19 июня 2025</p>
+            <p class="text-[#3A3A3A] space3">19 июня 2025</p>
           </a>
           <a
             href="/blog.html"
@@ -1722,7 +1800,7 @@
               Ввели усиленные правила упаковки грузов для повышения сохранности
               при перевозке.
             </p>
-            <p class="#3A3A3A space3">5 июня 2025</p>
+            <p class="text-[#3A3A3A] space3">5 июня 2025</p>
           </a>
           <a
             href="/blog.html"
@@ -1742,7 +1820,7 @@
               Подписывайтесь на наш Telegram-канал, чтобы первыми узнавать об
               акциях, изменениях и новостях компании.
             </p>
-            <p class="#3A3A3A space3">1 июля 2025</p>
+            <p class="text-[#3A3A3A] space3">1 июля 2025</p>
           </a>
         </div>
 
