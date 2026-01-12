@@ -95,7 +95,6 @@ body {
 /* меню */
 .dropdown-menu {
   position: absolute;
-  top: 250%;
   left: 0;
   width: max-content;
   white-space: nowrap;
@@ -118,16 +117,26 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* открыто */
-.dropdown.active .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.dropdown.active .dropdown-trigger img {
+.dropdown:hover .dropdown-trigger img {
   transform: rotate(180deg);
 }
+
+/* открыто */
+/* .dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+} */
+
+/* .dropdown.active .dropdown-trigger img {
+  transform: rotate(180deg);
+} */
 
 .menu-screen {
   position: absolute;
@@ -509,6 +518,7 @@ button {
   opacity: 0;
   z-index: 10;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .menu.active {

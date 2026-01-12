@@ -245,17 +245,8 @@
   .-mt-7\.5 {
     margin-top: calc(var(--spacing) * -7.5);
   }
-  .-mt-12 {
-    margin-top: calc(var(--spacing) * -12);
-  }
   .-mt-13 {
     margin-top: calc(var(--spacing) * -13);
-  }
-  .-mt-14 {
-    margin-top: calc(var(--spacing) * -14);
-  }
-  .-mt-17 {
-    margin-top: calc(var(--spacing) * -17);
   }
   .-mt-18 {
     margin-top: calc(var(--spacing) * -18);
@@ -307,9 +298,6 @@
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-2\.5 {
-    margin-bottom: calc(var(--spacing) * 2.5);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -463,9 +451,6 @@
   }
   .h-185 {
     height: calc(var(--spacing) * 185);
-  }
-  .h-\[48px\] {
-    height: 48px;
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -916,15 +901,6 @@
   .pt-22\.5 {
     padding-top: calc(var(--spacing) * 22.5);
   }
-  .pt-24 {
-    padding-top: calc(var(--spacing) * 24);
-  }
-  .pt-32 {
-    padding-top: calc(var(--spacing) * 32);
-  }
-  .pt-32\.5 {
-    padding-top: calc(var(--spacing) * 32.5);
-  }
   .pt-34 {
     padding-top: calc(var(--spacing) * 34);
   }
@@ -1145,14 +1121,39 @@
       height: calc(var(--spacing) * 160);
     }
   }
+  .max-\[1920px\]\:max-h-\[80dvh\] {
+    @media (width < 1920px) {
+      max-height: 80dvh;
+    }
+  }
   .max-\[1920px\]\:max-h-\[80vh\] {
     @media (width < 1920px) {
       max-height: 80vh;
     }
   }
-  .max-\[1920px\]\:max-h-\[87vh\] {
+  .max-\[1920px\]\:max-h-\[400px\] {
     @media (width < 1920px) {
-      max-height: 87vh;
+      max-height: 400px;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[500px\] {
+    @media (width < 1920px) {
+      max-height: 500px;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[530px\] {
+    @media (width < 1920px) {
+      max-height: 530px;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[550px\] {
+    @media (width < 1920px) {
+      max-height: 550px;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[600px\] {
+    @media (width < 1920px) {
+      max-height: 600px;
     }
   }
   .max-\[1920px\]\:w-\[350px\] {
@@ -2950,7 +2951,6 @@ body {
 }
 .dropdown-menu {
   position: absolute;
-  top: 250%;
   left: 0;
   width: max-content;
   white-space: nowrap;
@@ -2970,12 +2970,12 @@ body {
 .dropdown-menu a:hover {
   background: rgba(255, 255, 255, 0.08);
 }
-.dropdown.active .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-.dropdown.active .dropdown-trigger img {
+.dropdown:hover .dropdown-trigger img {
   transform: rotate(180deg);
 }
 .menu-screen {
@@ -3325,6 +3325,7 @@ button {
   opacity: 0;
   z-index: 10;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .menu.active {
   transform: translateX(0);
