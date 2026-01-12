@@ -1121,6 +1121,21 @@
       height: calc(var(--spacing) * 160);
     }
   }
+  .max-\[1920px\]\:max-h-\[70dvh\] {
+    @media (width < 1920px) {
+      max-height: 70dvh;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[70мр\] {
+    @media (width < 1920px) {
+      max-height: 70мр;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[75dvh\] {
+    @media (width < 1920px) {
+      max-height: 75dvh;
+    }
+  }
   .max-\[1920px\]\:max-h-\[80dvh\] {
     @media (width < 1920px) {
       max-height: 80dvh;
@@ -1129,6 +1144,11 @@
   .max-\[1920px\]\:max-h-\[80vh\] {
     @media (width < 1920px) {
       max-height: 80vh;
+    }
+  }
+  .max-\[1920px\]\:max-h-\[90dvh\] {
+    @media (width < 1920px) {
+      max-height: 90dvh;
     }
   }
   .max-\[1920px\]\:max-h-\[400px\] {
