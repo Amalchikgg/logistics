@@ -64,6 +64,9 @@ body {
     object-fit: cover;
     display: block;
   }
+  .about_line {
+    height: 395px;
+  }
 }
 
 @media (max-width: 1919px) and (min-width: 1441px) {
@@ -71,7 +74,7 @@ body {
     font-size: 14px;
   }
   .about_line {
-    height: 28.2rem;
+    height: 353px;
   }
 }
 
