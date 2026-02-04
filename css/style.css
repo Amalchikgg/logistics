@@ -40,7 +40,8 @@ body {
   font-family: "TTFirstNeue", sans-serif;
 }
 
-@media (min-width: 1922px) {
+/* Большие экраны (включая 1920px) — тянем контейнер и картинки "Услуг" */
+@media (min-width: 1920px) {
   .page-container {
     max-width: 100% !important;
     width: 100%;
@@ -577,12 +578,20 @@ button {
 .service-card {
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
+
 .service-card-arrow {
   position: relative;
   z-index: 2;
   filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(3612%)
     hue-rotate(343deg) brightness(93%) contrast(93%);
+}
+
+/* Текст в карточках "Услуги" всегда над картинкой */
+.service-card p {
+  position: relative;
+  z-index: 2;
 }
 .service-card:hover .service-card-arrow {
   transform: translateY(-2px);
