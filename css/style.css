@@ -46,6 +46,26 @@ body {
     width: 100%;
   }
 
+  .service-card {
+    min-height: clamp(18rem, 22vw, 24rem);
+  }
+
+  .service-card-image {
+    width: clamp(28rem, 32vw, 40rem);
+    max-width: none;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .service-card:nth-child(n + 4) .service-card-image {
+    width: clamp(44rem, 36vw, 64rem);
+  }
+
+  .service-card p {
+    font-size: clamp(1.5rem, 1.8vw, 2.1rem);
+    line-height: 1.2;
+  }
+
   .news-card {
     flex: 1 1 0%;
   }
