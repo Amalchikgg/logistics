@@ -462,6 +462,9 @@ button {
   .about_info {
     font-size: 0.75rem;
   }
+  .service-card {
+    padding: 1.5rem !important;
+  }
   .about_company_wrap {
     padding-right: 0;
     border-radius: 12px !important;
