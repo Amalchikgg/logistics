@@ -40,7 +40,6 @@ body {
   font-family: "TTFirstNeue", sans-serif;
 }
 
-/* Большие экраны (включая 1920px) — тянем контейнер и картинки "Услуг" */
 @media (min-width: 1920px) {
   .page-container {
     max-width: 100% !important;
