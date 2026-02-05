@@ -40,7 +40,7 @@ body {
   font-family: "TTFirstNeue", sans-serif;
 }
 
-@media (min-width: 1922px) {
+@media (min-width: 1920px) {
   .page-container {
     max-width: 100% !important;
     width: 100%;
@@ -51,7 +51,7 @@ body {
   }
 
   .service-card-image {
-    width: clamp(28rem, 32vw, 40rem);
+    width: clamp(28rem, 32vw, 36rem);
     max-width: none;
     height: auto;
     object-fit: cover;
@@ -577,10 +577,20 @@ button {
 .service-card {
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
+
 .service-card-arrow {
+  position: relative;
+  z-index: 2;
   filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(3612%)
     hue-rotate(343deg) brightness(93%) contrast(93%);
+}
+
+/* Текст в карточках "Услуги" всегда над картинкой */
+.service-card p {
+  position: relative;
+  z-index: 2;
 }
 .service-card:hover .service-card-arrow {
   transform: translateY(-2px);
