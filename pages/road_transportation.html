@@ -766,90 +766,31 @@
         <div class="flex gap-4 mb-16 overflow-auto max-[768px]:mb-10">
           <button
             class="tab-btn active py-4 shrink-0 px-6 flex items-center rounded-2xl text-2xl max-[1024px]:text-xl max-[1024px]:py-3 max-[1024px]:px-4"
+            data-tab="novosibirsk"
           >
             По Новосибирску
           </button>
 
           <button
             class="tab-btn py-4 shrink-0 px-6 flex items-center rounded-2xl text-2xl max-[1024px]:text-xl max-[1024px]:py-3 max-[1024px]:px-4"
+            data-tab="russia"
           >
             По всей России
           </button>
         </div>
+
         <div class="overflow-x-auto w-full">
           <table>
             <thead>
               <tr>
-                <th>Тип кузова</th>
-                <th>Грузоподъемность</th>
-                <th>Объем/длина кузова</th>
-                <th>Стоимость, рублей без НДС</th>
-                <th class="no_border_right">Мин. время оплаты ТС, час</th>
+                <th class="py-3">Тип кузова</th>
+                <th class="py-3">Грузоподъемность</th>
+                <th class="py-3">Объем/длина кузова</th>
+                <th class="py-3">Стоимость, рублей без НДС</th>
+                <th class="no_border_right py-3">Мин. время оплаты ТС, час</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td class="section-title">Фургон</td>
-                <td>1-2 т</td>
-                <td>35-60 куб.м</td>
-                <td>2400 руб/час</td>
-                <td class="no_border_right">4ч</td>
-              </tr>
-              <tr>
-                <td class="section-title">Термос</td>
-                <td>1-2 т</td>
-                <td>40-50 куб.м</td>
-                <td>_ руб/час</td>
-                <td class="no_border_right">4ч</td>
-              </tr>
-              <tr>
-                <td class="section-title">Рефрижератор</td>
-                <td>1,5 т</td>
-                <td>40-50 куб.м</td>
-                <td>_ руб/час</td>
-                <td class="no_border_right">6ч</td>
-              </tr>
-
-              <tr>
-                <td class="section-title">Борт</td>
-                <td>5 т</td>
-                <td>6-9м</td>
-                <td>2700 руб/час</td>
-                <td class="no_border_right">4ч</td>
-              </tr>
-
-              <tr>
-                <td class="section-title text-start! pl-10!" colspan="4">
-                  Отдаленные районы
-                </td>
-                <td class="section-title text-center! no_border_right">
-                  Доплата
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4" class="text-start! pl-10!">
-                  п. Краснообск, Ключ-Камышенское плато
-                </td>
-                <td class="no_border_right">0,5 ч</td>
-              </tr>
-              <tr>
-                <td colspan="4" class="text-start! pl-10!">
-                  Первомайский район, Советский район (Шлюз, ОбъГЭС,
-                  Академгородок, Нижняя Ельцовка), Кольцово, Барышево, Обь,
-                  Толмачево, Криводановка, Кудряши, ст. Мочище, п. Мочище,
-                  Пашино, ул. Кубовая, Бердск, Плотниково, Огурцово, Верх-Тула,
-                  Матвеевка, Марусино, Сокур,  с.Новолуговое
-                </td>
-                <td class="no_border_right">1 ч</td>
-              </tr>
-              <tr>
-                <td colspan="4" class="text-start! pl-10! no_border_bottom">
-                  Искитим, Колывань, Мошково, Коченево, Крахаль, Шелковичиха,
-                  свыше 50 км
-                </td>
-                <td class="no_border_bottom no_border_right">2 ч</td>
-              </tr>
-            </tbody>
+            <tbody id="table-body"></tbody>
           </table>
         </div>
       </section>

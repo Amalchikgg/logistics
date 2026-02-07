@@ -231,6 +231,136 @@ buttons.forEach((btn) => {
   });
 });
 
+const tableData = {
+  novosibirsk: `
+    <tr>
+      <td class="section-title">Фургон</td>
+      <td>1-2 т</td>
+      <td>35-60 куб.м</td>
+      <td>2400 руб/час</td>
+      <td class="no_border_right">4ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Термос</td>
+      <td>1-2 т</td>
+      <td>40-50 куб.м</td>
+      <td>2600 руб/час</td>
+      <td class="no_border_right">4ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Рефрижератор</td>
+      <td>1,5 т</td>
+      <td>40-50 куб.м</td>
+      <td>3200 руб/час</td>
+      <td class="no_border_right">6ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Борт</td>
+      <td>5 т</td>
+      <td>6-9м</td>
+      <td>2700 руб/час</td>
+      <td class="no_border_right">4ч</td>
+    </tr>
+    <tr>
+      <td class="section-title text-start! pl-10!" colspan="4">
+        Отдаленные районы
+      </td>
+      <td class="section-title text-center! no_border_right">
+        Доплата
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="text-start! pl-10!">
+        п. Краснообск, Ключ-Камышенское плато
+      </td>
+      <td class="no_border_right">0,5 ч</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="text-start! pl-10!">
+        Первомайский район, Советский район (Шлюз, ОбъГЭС,
+        Академгородок, Нижняя Ельцовка), Кольцово, Барышево, Обь,
+        Толмачево, Криводановка, Кудряши, ст. Мочище, п. Мочище,
+        Пашино, ул. Кубовая, Бердск, Плотниково, Огурцово, Верх-Тула,
+        Матвеевка, Марусино, Сокур, с.Новолуговое
+      </td>
+      <td class="no_border_right">1 ч</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="text-start! pl-10! no_border_bottom">
+        Искитим, Колывань, Мошково, Коченево, Крахаль, Шелковичиха,
+        свыше 50 км
+      </td>
+      <td class="no_border_bottom no_border_right">2 ч</td>
+    </tr>
+  `,
+  russia: `
+    <tr>
+      <td class="section-title">Фургон</td>
+      <td>1-2 т</td>
+      <td>35-60 куб.м</td>
+      <td>от 45000 руб/сутки</td>
+      <td class="no_border_right">24ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Термос</td>
+      <td>1-2 т</td>
+      <td>40-50 куб.м</td>
+      <td>от 48000 руб/сутки</td>
+      <td class="no_border_right">24ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Рефрижератор</td>
+      <td>1,5 т</td>
+      <td>40-50 куб.м</td>
+      <td>от 55000 руб/сутки</td>
+      <td class="no_border_right">24ч</td>
+    </tr>
+    <tr>
+      <td class="section-title">Борт</td>
+      <td>5 т</td>
+      <td>6-9м</td>
+      <td>от 50000 руб/сутки</td>
+      <td class="no_border_right">24ч</td>
+    </tr>
+    <tr>
+      <td class="section-title text-start! pl-10!" colspan="4">
+        Дополнительные услуги
+      </td>
+      <td class="section-title text-center! no_border_right">
+        Стоимость
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="text-start! pl-10!">
+        Грузчики (за 1 человека/час)
+      </td>
+      <td class="no_border_right">800 руб</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="text-start! pl-10! no_border_bottom">
+        Экспедирование груза
+      </td>
+      <td class="no_border_bottom no_border_right">по договоренности</td>
+    </tr>
+  `,
+};
+
+const tableBody = document.getElementById("table-body");
+
+// Инициализация таблицы
+tableBody.innerHTML = tableData.novosibirsk;
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    buttons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Меняем содержимое таблицы
+    const tab = btn.getAttribute("data-tab");
+    tableBody.innerHTML = tableData[tab];
+  });
+});
+
 //comments pagination
 
 const totalPages = 149; // всего страниц

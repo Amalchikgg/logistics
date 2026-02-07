@@ -6,6 +6,7 @@ table {
   border: 2px solid #eff0f1;
   border-radius: 24px;
   flex-shrink: 0;
+  table-layout: fixed;
 }
 
 thead {
@@ -14,14 +15,13 @@ thead {
 }
 
 th {
-  padding: 12px 8px;
-  text-align: left;
+  padding: 36px 0px;
+  text-align: center;
   font-weight: 500;
   border-right: 2px solid #eff0f1;
   border-bottom: 2px solid #eff0f1;
   font-size: 1.5rem;
   flex-shrink: 0;
-  text-align: center;
 }
 
 td {
