@@ -1814,16 +1814,6 @@
       line-height: calc(var(--spacing) * 7);
     }
   }
-  .max-\[1439px\]\:h-6 {
-    @media (width < 1439px) {
-      height: calc(var(--spacing) * 6);
-    }
-  }
-  .max-\[1439px\]\:w-6 {
-    @media (width < 1439px) {
-      width: calc(var(--spacing) * 6);
-    }
-  }
   .max-\[1025px\]\:mt-11 {
     @media (width < 1025px) {
       margin-top: calc(var(--spacing) * 11);
@@ -3153,7 +3143,7 @@ button {
   padding: 2rem;
   background: #f2f5f7;
   flex: 1;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     padding: 1rem;
     border-radius: 12px !important;
   }
@@ -3168,7 +3158,7 @@ button {
   background-color: #c83a36;
   margin-bottom: 5rem;
   flex-shrink: 0;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     margin-bottom: 3rem;
     width: 3rem;
     height: 3rem;
@@ -3190,7 +3180,7 @@ button {
     font-size: 4rem;
     margin-bottom: 0.5rem;
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     font-size: 3rem;
     margin-bottom: 0.5rem;
   }

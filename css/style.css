@@ -232,7 +232,7 @@ button {
   padding: 2rem;
   background: #f2f5f7;
   flex: 1;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     padding: 1rem;
     border-radius: 12px !important;
   }
@@ -249,7 +249,7 @@ button {
   margin-bottom: 5rem;
   flex-shrink: 0;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     margin-bottom: 3rem;
     width: 3rem;
     height: 3rem;
@@ -272,7 +272,7 @@ button {
     font-size: 4rem;
     margin-bottom: 0.5rem;
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     font-size: 3rem;
     margin-bottom: 0.5rem;
   }
