@@ -89,7 +89,7 @@ body {
   }
 }
 
-@media (max-width: 1919px) and (min-width: 1441px) {
+@media (max-width: 1919px) and (min-width: 1440px) {
   html {
     font-size: 14px;
   }
