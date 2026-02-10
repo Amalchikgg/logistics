@@ -348,7 +348,9 @@ const tableData = {
 const tableBody = document.getElementById("table-body");
 
 // Инициализация таблицы
-tableBody.innerHTML = tableData.novosibirsk;
+if (tableBody) {
+  tableBody.innerHTML = tableData?.novosibirsk || "";
+}
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {

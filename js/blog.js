@@ -2,9 +2,9 @@ const newsData = {
   all: `
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news1.png" class="mb-4" />
+        <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новый маршрут: доставка в малые города
         </p>
@@ -16,9 +16,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news2.png" class="mb-4" />
+        <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Снижение сроков городской доставки
         </p>
@@ -30,9 +30,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news3.png" class="mb-4" />
+        <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новые стандарты упаковки
         </p>
@@ -46,7 +46,7 @@ const newsData = {
         <a  href="/pages/blog.html"
         class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news4.png" class="mb-4" />
+        <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Мы теперь в Telegram
         </p>
@@ -58,9 +58,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news1.png" class="mb-4" />
+        <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новый маршрут: доставка в малые города
         </p>
@@ -72,9 +72,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news2.png" class="mb-4" />
+        <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Снижение сроков городской доставки
         </p>
@@ -86,9 +86,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news3.png" class="mb-4" />
+        <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новые стандарты упаковки
         </p>
@@ -102,7 +102,7 @@ const newsData = {
         <a  href="/pages/blog.html"
         class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news4.png" class="mb-4" />
+        <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Мы теперь в Telegram
         </p>
@@ -118,7 +118,7 @@ const newsData = {
         <a  href="/pages/blog.html"
         class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news4.png" class="mb-4" />
+        <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Мы теперь в Telegram
         </p>
@@ -130,9 +130,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news3.png" class="mb-4" />
+        <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новые стандарты упаковки
         </p>
@@ -144,9 +144,9 @@ const newsData = {
       </a>
       <a
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news2.png" class="mb-4" />
+        <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Снижение сроков городской доставки
         </p>
@@ -160,9 +160,9 @@ const newsData = {
   delivery: `
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news1.png" class="mb-4" />
+        <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новый маршрут: доставка в малые города
         </p>
@@ -174,9 +174,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news2.png" class="mb-4" />
+        <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Снижение сроков городской доставки
         </p>
@@ -188,9 +188,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news1.png" class="mb-4" />
+        <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новый маршрут: доставка в малые города
         </p>
@@ -202,9 +202,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news3.png" class="mb-4" />
+        <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Новые стандарты упаковки
         </p>
@@ -216,9 +216,9 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-74.5 max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
-        <img src="../assets/images/news2.png" class="mb-4" />
+        <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
           Снижение сроков городской доставки
         </p>
