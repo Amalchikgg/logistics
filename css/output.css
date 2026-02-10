@@ -2982,6 +2982,31 @@
       word-break: normal;
     }
   }
+  .min-\[1024px\]\:max-h-100 {
+    @media (width >= 1024px) {
+      max-height: calc(var(--spacing) * 100);
+    }
+  }
+  .min-\[1024px\]\:max-h-200 {
+    @media (width >= 1024px) {
+      max-height: calc(var(--spacing) * 200);
+    }
+  }
+  .min-\[1024px\]\:max-h-250 {
+    @media (width >= 1024px) {
+      max-height: calc(var(--spacing) * 250);
+    }
+  }
+  .min-\[1024px\]\:max-h-300 {
+    @media (width >= 1024px) {
+      max-height: calc(var(--spacing) * 300);
+    }
+  }
+  .min-\[1024px\]\:max-h-400 {
+    @media (width >= 1024px) {
+      max-height: calc(var(--spacing) * 400);
+    }
+  }
   .min-\[1024px\]\:flex-1 {
     @media (width >= 1024px) {
       flex: 1;

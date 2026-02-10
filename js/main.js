@@ -373,27 +373,35 @@ const totalPagesEl = document.getElementById("totalPages");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-totalPagesEl.textContent = totalPages;
-
-function updatePagination() {
-  currentPageEl.textContent = currentPage;
-
-  prevBtn.disabled = currentPage === 1;
-  nextBtn.disabled = currentPage === totalPages;
+if (totalPagesEl?.textContent) {
+  totalPagesEl.textContent = totalPages;
 }
 
-prevBtn.addEventListener("click", () => {
-  if (currentPage > 1) {
-    currentPage--;
-    updatePagination();
+function updatePagination() {
+  if (currentPageEl?.textContent) {
+    currentPageEl.textContent = currentPage;
   }
-});
 
-nextBtn.addEventListener("click", () => {
-  if (currentPage < totalPages) {
-    currentPage++;
-    updatePagination();
+  if (prevBtn && nextBtn) {
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
   }
-});
+}
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updatePagination();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updatePagination();
+    }
+  });
+}
 
 updatePagination();
