@@ -641,7 +641,9 @@ button {
   opacity: 1 !important;
   margin: 0px !important;
   border-radius: 10px !important;
-  transition: all 0.3s, transform 0.3s !important;
+  transition:
+    all 0.3s,
+    transform 0.3s !important;
 }
 
 .swiper-pagination-bullet-active {
