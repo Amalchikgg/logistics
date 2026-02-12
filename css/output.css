@@ -406,6 +406,15 @@
   .table {
     display: table;
   }
+  .aspect-\[1\] {
+    aspect-ratio: 1;
+  }
+  .aspect-\[4\] {
+    aspect-ratio: 4;
+  }
+  .aspect-auto {
+    aspect-ratio: auto;
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
