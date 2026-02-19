@@ -2,7 +2,7 @@ const newsData = {
   all: `
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -16,7 +16,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -30,7 +30,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -44,7 +44,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:74.5 max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -58,7 +58,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -72,7 +72,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -86,7 +86,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -100,7 +100,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:74.5 max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -116,7 +116,7 @@ const newsData = {
   company: `
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:74.5 max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:74.5 max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news4.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -130,7 +130,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -144,7 +144,7 @@ const newsData = {
       </a>
       <a
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -160,7 +160,7 @@ const newsData = {
   delivery: `
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -174,7 +174,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -188,7 +188,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news1.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -202,7 +202,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:w-full max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news3.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
@@ -216,7 +216,7 @@ const newsData = {
       </a>
       
         <a  href="/pages/blog.html"
-        class="max-[1440px]:w-full max-[1024px]:w-88 max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
+        class="max-[1440px]:w-full max-[1024px]:w-full max-[768px]:w-full min-[1440px]:flex-1 shrink-0 max-[768px]:rounded-3xl"
       >
         <img src="../assets/images/news2.png" class="mb-4 w-full" />
         <p class="text-[#3A3A3A] font-medium text-2xl space3 leading-8 mb-2">
